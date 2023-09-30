@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BsFillCartCheckFill } from 'react-icons/BsFillCartCheckFill';
+// import { BsFillCartCheckFill } from 'react-icons/BsFillCartCheckFill';
 
 
 const NavBar = () => {
@@ -41,7 +41,8 @@ const NavBar = () => {
         <div className="flex items-center space-x-4 pr-5">
           <Link to="/Login" className="text-white hover:underline">Login</Link>
           <Link to="/Cart" className="text-white ">
-             <BsFillCartCheckFill />
+             {/* <BsFillCartCheckFill /> */}
+             CartIcon
           </Link>
         </div>
       </div>
