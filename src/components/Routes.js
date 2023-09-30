@@ -6,6 +6,8 @@ import HomePage from './HomePage';
 import Shop from './Shop';
 import About from './About';
 import Contact from './Contact';
+import Login from './Login';
+import CartPage from './CartPage';
 
 function RoutesConfig() {
   return (
@@ -16,7 +18,8 @@ function RoutesConfig() {
         <Route path="/Shop" element={<Shop />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
-        {/* Add routes for other pages */}
+        <Route path="/Login" element={<Login />} />
+        <Route path="/CartPage" element={<CartPage />} />
       </Routes>
     </Router>
   );

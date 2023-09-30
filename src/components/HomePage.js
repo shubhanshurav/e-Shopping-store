@@ -5,7 +5,7 @@ function HomePage() {
   return (
     <div>
       {/* Homepage content */}
-      <h1 className="text-3xl font-bold">Welcome to our website!</h1>
+      <h1>Home Page</h1>
     </div>
   );
 }

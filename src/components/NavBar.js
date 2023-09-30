@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { BsFillCartCheckFill } from 'react-icons/BsFillCartCheckFill';
+
 
 const NavBar = () => {
   return (
@@ -7,7 +9,7 @@ const NavBar = () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="text-white text-2xl font-bold">
-          YourLogo
+          Logo
         </a>
 
         {/* Search */}
@@ -37,22 +39,9 @@ const NavBar = () => {
 
         {/* User Actions */}
         <div className="flex items-center space-x-4 pr-5">
-          <Link to="/" className="text-white hover:underline">Login</Link>
-          <Link to="/" className="text-white hover:underline">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 12h6m-3 3v6m0 0l3-3m-3-3l-3 3"
-              />
-            </svg>
+          <Link to="/Login" className="text-white hover:underline">Login</Link>
+          <Link to="/Cart" className="text-white ">
+             <BsFillCartCheckFill />
           </Link>
         </div>
       </div>
