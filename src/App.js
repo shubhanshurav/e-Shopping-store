@@ -1,19 +1,13 @@
-import React from "react";
-import "./style/index.css";
-import HomePage from "./components/HomePage";
-import Shop from "./components/Shop";
-import About from "./components/About";
-import Contact from "./components/Contact";
+// src/App.js
+import React from 'react';
+import RoutesConfig from './components/Routes';
 
-const App = () => {
-  return(
-    <div>
-       <HomePage />
-       <Shop />
-       <About />
-       <Contact />
+function App() {
+  return (
+    <div className="bg-gray-100">
+      <RoutesConfig />
     </div>
   );
-};
+}
 
 export default App;
