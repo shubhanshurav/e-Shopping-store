@@ -2,10 +2,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './NavBar';
-import HomePage from './HomePage';
-import Shop from './Shop';
-import About from './About';
-import Contact from './Contact';
+import HomePage from '../pages/HomePage';
+import Shop from '../pages/Shop';
+import About from '../pages/About';
+import Contact from '../pages/Contact';
 import Login from './Login';
 import CartPage from './CartPage';
 
@@ -20,6 +20,7 @@ function RoutesConfig() {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/CartPage" element={<CartPage />} />
+        <Route path="*" element={<div>Not Found!!</div>} />
       </Routes>
     </Router>
   );
