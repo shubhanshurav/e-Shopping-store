@@ -59,24 +59,8 @@ const HomePage = () => {
       </div>
 
       {/* featured Products  */}
-      <div>
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-orange-600 p-4">Featured Products</h1>
-          <p>All Weather New Modern Designs</p>
-        </div>
           <FeatureProducts />
-          
-        <div>
-          <div
-          className="bg-cover bg-no-repeat bg-center h-64 md:h-96 lg:h-120"
-          style={{ backgroundImage: `url('/assets/banner/b2.jpg')`}}>
-            {/* <img src="/Assets/banner/b2.jpg" className="rounded-2xl h-52 w-screen" alt="banner2"/> */}
-            <h1>Repair Services</h1>
-          </div>
-        </div>
 
-          <FeatureProducts />
-      </div>
 
     </div>
   );

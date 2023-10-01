@@ -4,7 +4,7 @@ const Card = ({image ,id ,company,price,Heading}) => {
   return (
 
      
-    <div className='w-[300px]  relative border-inherit	 border rounded-xl py-3 px-3 m-10 '>
+    <div className='w-[250px] border-inherit border rounded-xl py-3 px-3 m-5'>
 
               <img src={image} className='w-full rounded-xl' alt="" />
 

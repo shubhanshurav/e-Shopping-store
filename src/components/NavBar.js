@@ -5,7 +5,7 @@ import {CgProfile} from 'react-icons/cg';
 
 const NavBar = () => {
   return (
-    <nav className="p-2 bg-blue-900">
+    <nav className="p-2 bg-blue-900 sticky top-0">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
           <Link to="/" className="text-center">
