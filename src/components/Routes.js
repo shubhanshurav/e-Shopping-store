@@ -10,9 +10,9 @@ import Contact from '../pages/Contact';
 import Login from './Login';
 import CartPage from './CartPage';
 import shopData from '../Data';
+import Footer from './Footer';
 
-function RoutesConfig() {
-
+const RoutesConfig = () => {
 
 const [shopdata , setShopData] = useState(shopData);
 
@@ -28,7 +28,8 @@ const [shopdata , setShopData] = useState(shopData);
         <Route path="/CartPage" element={<CartPage />} />
         <Route path="*" element={<div>Not Found!!</div>} />
       </Routes>
-    </Router>
+      <Footer />
+    </Router> 
   );
 }
 

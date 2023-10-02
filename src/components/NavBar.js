@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BsFillCartCheckFill } from 'react-icons/bs';
-import {CgProfile} from 'react-icons/cg';
+// import { BsFillCartCheckFill } from 'react-icons/bs';
+// import {CgProfile} from 'react-icons/cg';
 
 const NavBar = () => {
   return (
@@ -38,12 +38,17 @@ const NavBar = () => {
         </ul>
 
         {/* User Actions */}
-        <div className="flex items-center space-x-4 pr-5">
+        <div className="flex flex-wrap space-x-4 pr-5 place-content-center">
           <Link to="/Login" className="text-white text-4xl">
-             <CgProfile />
+             {/* <CgProfile /> */}
+             <img src='/assets/user.svg'  alt='UserLogo'/>
           </Link>
-          <Link to="/CartPage" className="text-white flex items-center">
-                <BsFillCartCheckFill className="mr-1 text-2xl" />
+          <Link to="/CartPage" className="text-white flex place-content-center w-12">
+                <img src='/assets/wishlist.svg'  alt='wishlist'/>
+          </Link>
+          <Link to="/CartPage" className="text-white flex place-content-center w-12">
+                {/* <BsFillCartCheckFill className="mr-1 text-2xl" /> */}
+                <img src='/assets/cart.svg'  alt='CartLogo'/>
           </Link>
         </div>
       </div>

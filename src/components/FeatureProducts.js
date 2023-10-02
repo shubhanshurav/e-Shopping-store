@@ -9,7 +9,7 @@ const FeatureProducts = () => {
           <p>All Weather New Modern Designs</p>
       </div>
       <div className='flex flex-wrap flex-row place-content-center m-auto pt-14'>
-         <div className='border-2 border-gray-500 w-64 m-5 rounded-2xl'>
+         <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
            <img src='/assets/products/f3.jpg' alt='product' className='rounded-3xl p-2'/>
            <div className='border-b-2 border-gray-400 m-6 pb-4'>
                 <p className='pb-3 text-red-400 font-mono'>adidas</p>
@@ -21,7 +21,7 @@ const FeatureProducts = () => {
            </div>
          </div>
 
-         <div className='border-2 border-gray-500 w-64 m-5 rounded-2xl'>
+         <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
             <img src='/assets/products/f4.jpg' alt='product' className='rounded-3xl p-2'/>
             <div className='border-b-2 border-gray-400 m-6 pb-4'>
                   <p className='pb-3 text-red-400 font-mono'>levi's</p>
@@ -33,7 +33,7 @@ const FeatureProducts = () => {
             </div>
          </div>
 
-         <div className='border-2 border-gray-500 w-64 m-5 rounded-2xl'>
+         <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
             <img src='/assets/products/f5.jpg' alt='product' className='p-2 rounded-3xl'/>
             <div className='border-b-2 border-gray-400 m-6 pb-4'>
                   <p className='pb-3 text-red-400 font-mono'>under armour</p>
@@ -45,7 +45,7 @@ const FeatureProducts = () => {
             </div>
          </div>
 
-         <div className='border-2 border-gray-500 w-64 m-5 rounded-2xl'>
+         <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
             <img src='/assets/products/f6.jpg' alt='product' className='rounded-3xl p-2'/>
             <div className='border-b-2 border-gray-400 m-6 pb-4'>
                   <p className='pb-3 text-red-400 font-mono'>h&m</p>
@@ -64,11 +64,13 @@ const FeatureProducts = () => {
       >
          <h1 className="text-white text-center pt-5 text-xl">Repair Services</h1>
          <h1 className="text-white text-center p-3 text-2xl">On 70% Off on All Products And Accessories</h1>
-         <Link to='/'>
-            <button className="bg-orange-600 px-6 py-2 border-solid border-2 border-black rounded-2xl hover:bg-slate-200 hover:text-black place-content-center">
-            Explore Now
-            </button>
-         </Link>
+         <div className='text-center'>
+            <Link to='/'>
+               <button className="bg-orange-600 px-6 py-2 border-solid border-4 border-amber-400 rounded-2xl hover:bg-slate-200 hover:text-black hover:border-amber-600 place-content-center">
+               Explore Now
+               </button>
+            </Link>
+         </div>
       </div>
 
       <div className="text-center">
@@ -76,7 +78,7 @@ const FeatureProducts = () => {
           <p>Your Best Designer Outfits</p>
       </div>
       <div className='flex flex-wrap flex-row place-content-center m-auto pt-14'>
-      <div className='border-2 border-gray-500 w-64 m-5 rounded-2xl'>
+      <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
            <img src='/assets/products/img2.png' alt='product' className='rounded-3xl p-2'/>
            <div className='border-b-2 border-gray-400 m-6 pb-4'>
                 <p className='pb-3 text-red-400 font-mono'>adidas</p>
@@ -88,7 +90,7 @@ const FeatureProducts = () => {
            </div>
          </div>
 
-         <div className='border-2 border-gray-500 w-64 m-5 rounded-2xl'>
+         <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
             <img src='/assets/products/img3.png' alt='product' className='rounded-3xl p-2'/>
             <div className='border-b-2 border-gray-400 m-6 pb-4'>
                   <p className='pb-3 text-red-400 font-mono'>levi's</p>
@@ -100,7 +102,7 @@ const FeatureProducts = () => {
             </div>
          </div>
 
-         <div className='border-2 border-gray-500 w-64 m-5 rounded-2xl'>
+         <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
             <img src='/assets/products/img4.png' alt='product' className='p-2 rounded-3xl'/>
             <div className='border-b-2 border-gray-400 m-6 pb-4'>
                   <p className='pb-3 text-red-400 font-mono'>under armour</p>
@@ -112,7 +114,7 @@ const FeatureProducts = () => {
             </div>
          </div>
 
-         <div className='border-2 border-gray-500 w-64 m-5 rounded-2xl'>
+         <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
             <img src='/assets/products/img5.png' alt='product' className='rounded-3xl p-2'/>
             <div className='border-b-2 border-gray-400 m-6 pb-4'>
                   <p className='pb-3 text-red-400 font-mono'>h&m</p>
@@ -126,7 +128,7 @@ const FeatureProducts = () => {
 
          <div className='flex flex-wrap flex-row place-content-center m-auto pt-14'>
             {/* card1 */}
-           <div className='flex flex-row border-2 border-gray-400 m-4 h-52 rounded-2xl'>
+           <div className='flex flex-row border-2 border-gray-300 m-4 h-52 rounded-2xl'>
              <img src='/assets/banner/b17.jpg' className='w-64 rounded-2xl p-2'/>
              <div className='p-4'>
                <h1>Hot Deals</h1>
@@ -142,9 +144,9 @@ const FeatureProducts = () => {
            </div>
 
           {/* card2 */}
-           <div className='flex flex-row border-2 border-gray-400 m-4 h-52 rounded-2xl'>
+           <div className='flex flex-row border-2 border-gray-300 m-4 h-52 rounded-2xl'>
              <img src='/assets/banner/b10.jpg' className='w-64 rounded-2xl p-2'/>
-             <div>
+             <div className='p-4'>
                <p>Season-In</p>
                <p>All Weather Attire</p>
                <p>It never matter which season it is</p>
