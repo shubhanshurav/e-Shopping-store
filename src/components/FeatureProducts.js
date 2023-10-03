@@ -17,7 +17,7 @@ const FeatureProducts = () => {
            </div>
            <div className='text-center pb-5'>
               <h3 className='text-red-500 font-bold text-2xl'>in stock</h3>
-              <p>$50% Off</p>
+              <strike className='text-orange-400'>$50% Off</strike>
            </div>
          </div>
 
@@ -29,7 +29,7 @@ const FeatureProducts = () => {
             </div>
             <div className='text-center pb-5'>
                <h3 className='text-red-500 font-bold text-2xl'>in stock</h3>
-               <p>$50% Off</p>
+               <strike className='text-orange-400'>$50% Off</strike>
             </div>
          </div>
 
@@ -41,7 +41,7 @@ const FeatureProducts = () => {
             </div>
             <div className='text-center pb-5'>
                <h3 className='text-red-500 font-bold text-2xl'>in stock</h3>
-               <p>$50% Off</p>
+               <strike className='text-orange-400'>$50% Off</strike>
             </div>
          </div>
 
@@ -53,7 +53,7 @@ const FeatureProducts = () => {
             </div>
             <div className='text-center pb-5'>
                <h3 className='text-red-500 font-bold text-2xl'>in stock</h3>
-               <p>$50% Off</p>
+               <strike className='text-orange-400'>$50% Off</strike>
             </div>
          </div>
     </div>
@@ -86,7 +86,7 @@ const FeatureProducts = () => {
            </div>
            <div className='text-center pb-5'>
               <h3 className='text-red-500 font-bold text-2xl'>in stock</h3>
-              <p>$50% Off</p>
+              <strike className='text-orange-400'>$50% Off</strike>
            </div>
          </div>
 
@@ -98,7 +98,7 @@ const FeatureProducts = () => {
             </div>
             <div className='text-center pb-5'>
                <h3 className='text-red-500 font-bold text-2xl'>in stock</h3>
-               <p>$50% Off</p>
+               <strike className='text-orange-400'>$50% Off</strike>
             </div>
          </div>
 
@@ -110,7 +110,7 @@ const FeatureProducts = () => {
             </div>
             <div className='text-center pb-5'>
                <h3 className='text-red-500 font-bold text-2xl'>in stock</h3>
-               <p>$50% Off</p>
+               <strike className='text-orange-400'>$50% Off</strike>
             </div>
          </div>
 
@@ -122,7 +122,7 @@ const FeatureProducts = () => {
             </div>
             <div className='text-center pb-5'>
                <h3 className='text-red-500 font-bold text-2xl'>in stock</h3>
-               <p>$50% Off</p>
+               <strike className='text-orange-400'>$50% Off</strike>
             </div>
          </div>
 
