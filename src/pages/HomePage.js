@@ -1,14 +1,14 @@
 // src/components/HomePage.js
 import React from "react";
 import FeatureProducts from "../components/FeatureProducts";
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
     <div>
       {/* Banner  */}  
       <div
-        className="bg-cover bg-no-repeat bg-center h-64 md:h-96 lg:h-120"
+        className="bg-cover bg-no-repeat bg-center h-64 md:h-96 lg:h-120 scroll-smooth"
         style={{ backgroundImage: `url('/assets/back.jpg')`}}
       >
         {/* Content inside the banner */}
@@ -25,8 +25,8 @@ const HomePage = () => {
           <p className="text-xl md:text-1xl text-black pb-5">
             Save more today with Apna Fasion Store
           </p>
-          <button className="bg-slate-900 px-6 py-2 border-solid border-2 border-gray-600 rounded-2xl hover:bg-slate-200 hover:text-black">
-            Shop Now
+          <button className="bg-orange-700 px-6 py-2 border-solid border-2 border-orange-600 rounded-xl hover:bg-slate-200 hover:text-black">
+            <Link to="/Shop">Shop Now</Link>
           </button>
         </div>
       </div>

@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom';
 const NavBar = () => {
   return (
     <nav className="p-2 bg-blue-900 sticky top-0">
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container m-auto flex items-center justify-between">
         {/* Logo */}
           <Link to="/" className="text-center">
-            <img src='/assets/AFSLogo.png' className='p-2 w-44 h-16' alt='Logo'/>
+            <img src='/assets/AFSLogo.png' className='p-2 w-48 h-18' alt='Logo'/>
           </Link>
 
         {/* Search */}
-        <div className="flex-1 ml-2 text-center">
+        <div className="flex flex-row m-auto text-center">
           <input
             type="text" placeholder="Find Product here..."
             className="w-48 py-2 px-2 rounded-l-md  border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
@@ -22,23 +22,23 @@ const NavBar = () => {
         </div>
 
         {/* Navigation Links */}
-        <ul className="flex space-x-8 pr-20 text-white">
+        <ul className="flex flex-row text-white space-x-8 p-4 text-center">
           <li>
-             <Link to="/" className=" hover:underline hover:text-stone-300">Home</Link>
+             <Link to="/" className=" hover:border-b-2 hover:border-stone-300 hover:text-stone-300">Home</Link>
           </li>
           <li>
-             <Link to="/Shop" className=" hover:underline hover:text-stone-300">Shop</Link>
+             <Link to="/Shop" className=" hover:border-b-2 hover:border-stone-300 hover:text-stone-300">Shop</Link>
           </li>
           <li>
-             <Link to="/About" className=" hover:underline hover:text-stone-300">About</Link>
+             <Link to="/About" className=" hover:border-b-2 hover:border-stone-300 hover:text-stone-300">About</Link>
           </li>
           <li>
-             <Link to="/Contact" className=" hover:underline hover:text-stone-300">Contact Us</Link>
+             <Link to="/Contact" className=" hover:border-b-2 hover:border-stone-300 hover:text-stone-300">Contact Us</Link>
           </li>
         </ul>
 
         {/* User Actions */}
-        <div className="flex flex-wrap space-x-4 pr-5 place-content-center">
+        <div className="flex flex-wrap space-x-4 p-4">
           <Link to="/Login" className="text-white text-4xl">
              {/* <CgProfile /> */}
              <img src='/assets/user.svg'  alt='UserLogo'/>
