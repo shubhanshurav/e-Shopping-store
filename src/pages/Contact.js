@@ -17,7 +17,7 @@ const Contact = () => {
 
       <div className="flex flex-row flex-wrap m-4">
         {/* Map */}
-        <div className="bg-gray-300 p-3 flex-1 rounded-lg">
+        <div className="bg-slate-100 p-3 flex-1 rounded-l-lg">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.305258970253!2d77.9894667097838!3d27.209564247174697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747766625cce3f%3A0x9eb5b271353779a9!2sInstitute%20of%20Engineering%20%26%20Technology%2C%20Khandari%2C%20Agra!5e0!3m2!1sen!2sin!4v1696408031855!5m2!1sen!2sin"
             // width="600"
@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
 
         {/* Contact details */}
-        <div className="bg-slate-100 p-5 flex-1 rounded-xl">
+        <div className="bg-slate-100 p-5 flex-1 rounded-r-xl">
           <div className="font-bold text-2xl text-center p-3">
             <h1>Contact Us</h1>
           </div>
