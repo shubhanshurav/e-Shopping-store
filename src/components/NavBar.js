@@ -33,7 +33,7 @@ const NavBar = () => {
              <Link to="/About" className=" hover:border-b-2 hover:border-stone-300 hover:text-stone-300">About</Link>
           </li>
           <li>
-             <Link to="/Contact" className=" hover:border-b-2 hover:border-stone-300 hover:text-stone-300">Contact Us</Link>
+             <Link to="/Contact" className=" hover:border-b-2 hover:border-stone-300 hover:text-stone-300">Contact</Link>
           </li>
         </ul>
 

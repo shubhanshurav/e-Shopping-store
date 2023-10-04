@@ -15,7 +15,7 @@ import Footer from './Footer';
 const RoutesConfig = () => {
 
 const [shopdata , setShopData] = useState(shopData);
-
+ 
   return (
     <Router>
       <NavBar />
