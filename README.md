@@ -1,6 +1,6 @@
-# Apna Fashion Store Documentation
+## Apna Fashion Store Documentation
 
-## Table of Contents
+### Table of Contents
 
 1. [Project Overview](#project-overview)
 2. [Technologies Used](#technologies-used)
@@ -11,11 +11,11 @@
 7. [Contributing](#contributing)
 8. [Project Admins](#project-admins)
 
-## 1. Project Overview <a name="project-overview"></a>
+### 1. Project Overview <a name="project-overview"></a>
 
 Apna Fashion Store is a web application built using the MERN (MongoDB, Express.js, React, and Node.js) stack. It is designed for online fashion retail, allowing users to browse and shop for various fashion products. This documentation provides an overview of the project, its technologies, and how to set it up and use it.
 
-## 2. Technologies Used <a name="technologies-used"></a>
+### 2. Technologies Used <a name="technologies-used"></a>
 
 The following technologies were used to develop Apna Fashion Store:
 
@@ -27,7 +27,7 @@ The following technologies were used to develop Apna Fashion Store:
 - `React` : Router: For defining and handling routes in the frontend.
 - `Other` : libraries and packages for styling, form handling, and authentication.
 
-## 3. Project Structure <a name="project-structure"></a>
+### 3. Project Structure <a name="project-structure"></a>
 
 Provide a brief description of your project's directory structure. For example:
 
@@ -39,7 +39,7 @@ Provide a brief description of your project's directory structure. For example:
 - `/routes`: Defines API routes on the server.
 - `/models`: Defines database models using Mongoose.
 
-## 4. Installation <a name="installation"></a>
+### 4. Installation <a name="installation"></a>
 
 Explain how to install and set up the project locally. Include steps for setting up the database, running the server, and starting the frontend development server.
 
@@ -58,7 +58,7 @@ cd client
 npm install
 ```
 
-## 5. Usage <a name="usage"></a>
+### 5. Usage <a name="usage"></a>
 
 Describe how to run the application and use its features.
 
@@ -77,7 +77,7 @@ npm start
 
 - Access the application in your browser at `http://localhost:3000`.
 
-## 6. Routes and Components <a name="routes-and-components"></a>
+### 6. Routes and Components <a name="routes-and-components"></a>
 
 Explain the main routes and components used in your application.
 
@@ -90,11 +90,11 @@ Explain the main routes and components used in your application.
 
 Certainly! Here are the explanations for contributing guidelines:
 
-## 7. Contributing <a name="contributing"></a>
+### 7. Contributing <a name="contributing"></a>
 
 We welcome contributions from the community to improve and enhance the Apna Fashion Store project. If you would like to contribute, please follow these guidelines:
 
-### Submitting Issues
+#### Submitting Issues
 
 If you encounter any issues, bugs, or have feature requests, please submit them through the project's [issue tracker](https://github.com/yourusername/your-repo/issues).
 
@@ -105,7 +105,7 @@ When submitting issues, provide detailed information, including:
 - Steps to reproduce the issue (if applicable).
 - Screenshots or code snippets that help illustrate the problem (if applicable).
 
-### Pull Requests
+#### Pull Requests
 
 We encourage you to submit pull requests for bug fixes, enhancements, or new features. To contribute via pull request, please follow these steps:
 
@@ -122,9 +122,9 @@ Your pull request will be reviewed by the project maintainers. Please be patient
 Thank you for considering contributing to Apna Fashion Store, and we appreciate your support!}
 
 
-## Project Admins <a name ="project-admins"></a>
+### 8. Project Admins <a name ="project-admins"></a>
 
-### Shubhanshu Rao
+#### Shubhanshu Rao
 
 <p>
   <img src="https://github.com/shubhanshurav/Apna-Fashion-Store/assets/87806305/caa94905-3bf8-4e54-9aec-1125401d3b14" alt="Shubhanshu Rao" width="150" height="150">
@@ -134,7 +134,7 @@ Follow me:
 - [GitHub](https://github.com/shubhanshurav)
 - [LinkedIn](https://www.linkedin.com/in/shubhanshu-rao-052320208/)
 
-### Saket Singh
+#### Saket Singh
 
 <p>
   <img src="https://github.com/shubhanshurav/Apna-Fashion-Store/assets/87806305/29769d6e-1b75-44ea-8651-a6d522e08ffb" alt="Saket Singh" width="150" height="150">
