@@ -9,7 +9,6 @@
 5. [Usage](#usage)
 6. [Routes and Components](#routes-and-components)
 7. [Contributing](#contributing)
-8. [License](#license)
 
 ## 1. Project Overview <a name="project-overview"></a>
 
