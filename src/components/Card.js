@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ image, id, company, price, Heading }) => {
   return (
@@ -15,7 +16,7 @@ const Card = ({ image, id, company, price, Heading }) => {
       </p>
 
       <div className="flex justify-between mt-6">
-        <p className="text-red-600 font-semibold  ">View Details</p>
+      <Link to="/Shop/ViewDetails" className='text-red-600 font-semibold hover:text-black '  >View Details</Link>
 
         <button className="bg-green-500 text-white py-2 px-2 rounded-md text-sm  font font-semibold ">
           Add to Cart
