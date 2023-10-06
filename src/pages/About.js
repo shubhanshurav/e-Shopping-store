@@ -12,7 +12,7 @@ const About = ({datacustomer}) => {
 
     <div className='w-[100%]'>
 
-   <div className=' relative flex flex-col items-center m-10'>
+   <div className=' relative flex flex-col items-center m-10 -z-10'>
        <img src="./assets/about/banner.png"  loading='lazy' className='h-[300px] w-[100vw] rounded-md' alt="banner" />
        <p className='absolute text-[40px] text-yellow-400 font-bold top-[50px]'>#Know Us</p>
        <p className=' absolute text-[25px] top-[100px] text-orange-200 font-semibold '>Get to know us more</p>
@@ -50,29 +50,29 @@ const About = ({datacustomer}) => {
 </div>
 
 <div className='SliderMain'>
-   <div className="flex flex-row m-auto p-10 Slide " >
+   <div className="flex flex-row m-auto p-10 Slide" >
 
-        <div className="  p-2 m-5 SliderDiv ">
+        <div className="  p-2 m-5 SliderDiv -z-10 ">
            <img className='w-20' src='/assets/icons/icon1.png' alt="icons" />
            <p className="text-center">Fast Orders</p>
         </div>
 
-        <div  className="  p-2 m-5  SliderDiv">
+        <div  className="  p-2 m-5  SliderDiv -z-10 ">
            <img className='w-20' src='/assets/icons/icon2.png' alt="icons" />
            <p className="text-center">Quick Shipping</p>
         </div>
 
-        <div  className="  p-2 m-5 SliderDiv">
+        <div  className="  p-2 m-5 SliderDiv -z-10 ">
            <img className='w-20' src='/assets/icons/icon3.png' alt="icons" />
            <p>High Saves</p>
         </div>
 
-        <div  className="  p-2 m-5  SliderDiv">
+        <div  className="  p-2 m-5  SliderDiv -z-10 ">
            <img className='w-20' src='/assets/icons/icon4.png' alt="icons" />
            <p>24/7 Support</p>
         </div>
 
-        <div  className=" p-2 m-5 SliderDiv ">
+        <div  className=" p-2 m-5 SliderDiv -z-10  ">
            <img className='w-20' src='/assets/icons/icon5.png' alt="icons" />
            <p>Online Orders</p>
         </div>
