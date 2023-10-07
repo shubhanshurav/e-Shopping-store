@@ -9,7 +9,7 @@ const NavBar = () => {
   const {cart} = useSelector((state) => state);
 
   return (
-    <nav className=" bg-blue-900 sticky flex flex-row flex-wrap top-0 w-fit p-2 ">
+    <nav className="p-2 bg-blue-900 sticky flex flex-row flex-wrap top-0 w-screen">
       <div className="container m-auto flex items-center justify-between">
         {/* Logo */}
           <Link to="/" className="text-center">
