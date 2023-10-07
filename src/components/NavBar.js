@@ -9,7 +9,7 @@ const NavBar = () => {
   const {cart} = useSelector((state) => state);
 
   return (
-    <nav className="p-2 bg-blue-900 sticky flex flex-row flex-wrap top-0 w-screen">
+    <nav className="p-2 bg-blue-900 fixed flex flex-row flex-wrap top-0 w-screen">
       <div className="container m-auto flex items-center justify-between">
         {/* Logo */}
           <Link to="/" className="text-center">
@@ -55,7 +55,7 @@ const NavBar = () => {
                 <img src='/assets/cart.svg'  alt='CartLogo'/>
                 {
                   cart.length > 0 &&
-                  <span className='absolute -top-1 -right-3 font-bold text-gray-700 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{cart.length}</span>
+                  <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{cart.length}</span>
                 } 
           </Link>
         </div>
