@@ -18,7 +18,9 @@ const Card = ({ image, id, company, price, Heading }) => {
         <p className="text-red-600 font-semibold  ">View Details</p>
 
         <button className="bg-green-500 text-white py-2 px-2 rounded-md text-sm  font font-semibold ">
-          Add to Cart
+          {
+            false ? <p>Remove Item</p> : <p>Add to Cart</p>
+          }
         </button>
       </div>
     </div>

@@ -1,0 +1,16 @@
+.spinner {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    /* border:8px solid; */
+    /* border-color:#E4E4ED; */
+    /* border-right-color: #766DF4; */
+    background: conic-gradient(#0000 10%,#474bff);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% -px),#0000 0);
+    animation:s2 1s infinite linear;
+  }
+  @keyframes s2 {
+    to{
+        transform: rotate(1turn)
+    }
+} 
