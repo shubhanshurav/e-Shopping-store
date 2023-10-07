@@ -1,5 +1,3 @@
-Creating documentation for your MERN stack website named "Apna Fashion Store" involves providing information about various aspects of your project. Below is a template for creating a documentation file to add to your README.md:
-
 # Apna Fashion Store Documentation
 
 ## Table of Contents
@@ -11,7 +9,7 @@ Creating documentation for your MERN stack website named "Apna Fashion Store" in
 5. [Usage](#usage)
 6. [Routes and Components](#routes-and-components)
 7. [Contributing](#contributing)
-8. [License](#license)
+8. [Project Admins](#project-admins)
 
 ## 1. Project Overview <a name="project-overview"></a>
 
@@ -123,7 +121,7 @@ Your pull request will be reviewed by the project maintainers. Please be patient
 
 Thank you for considering contributing to Apna Fashion Store, and we appreciate your support!
 
-## Project Admins
+## Project Admins <a name="project-admins"></a>
 
 ### Shubhanshu Rao
 
