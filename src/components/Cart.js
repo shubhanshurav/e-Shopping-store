@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import CartItem from './CartItem';
+import HomePage from '../pages/HomePage';
 
 const Cart = () => {
 
@@ -40,9 +41,9 @@ const Cart = () => {
               </div>
            </div>
          </div>):
-         (<div className='text-justify items-center h-[100vh]'> 
-             <h1 className='font-bold'>Cart Empty</h1>
-             <Link to={"/"}>
+         (<div className='text-center mt-44 h-[60vh]'> 
+             <h1 className='font-semibold text-4xl'>Cart Empty</h1>
+             <Link to="/">
                  <button 
                  className='bg-blue-700 border-2 border-blue-700 rounded-2xl font-semibold text-sm text-white w-[10%] p-2 mt-5 hover:bg-blue-800'>
                   Shop Now
