@@ -13,6 +13,8 @@ import shopData from '../Data';
 import data from '../DataCustomer';
 import Footer from './Footer';
 import ViewDetails from './ViewDetails';
+import ForgetPassword from './ForgetPassword';
+import Signup from './Signup';
 
 const RoutesConfig = () => {
 
@@ -30,6 +32,8 @@ const [shopdata , setShopData] = useState(shopData);
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/CartPage" element={<CartPage />} />
+        <Route path="/ForgetPassword" element={<ForgetPassword/>}/>
+        <Route path="/Signup" element={<Signup/>}/>
         <Route path="*" element={<div>Not Found!!</div>} />
       </Routes>
       <Footer />
