@@ -5,7 +5,7 @@ const Login = () => {
   return (
 <div className='m-10 bg-slate-200 p-10 '>
 
-  <form action="" className='flex  flex-col  bg-slate-50 m-auto  place-content-center rounded-xl  items-center w-[25%]  border-slate-200
+  <form action="" className='flex  flex-col  bg-slate-50 m-auto  place-content-center rounded-xl  items-center w-[350px]  border-slate-200
   border-2  '>
 
 <div className='m-10'><img  src='./assets/Login img.jpg' className='text-[43px]  text-black font-semibold w-[100px] ' alt="logo"/>
