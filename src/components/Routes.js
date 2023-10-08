@@ -23,7 +23,9 @@ const [shopdata , setShopData] = useState(shopData);
  
   return (
     <Router>
-      <NavBar />
+      <div>
+          <NavBar />
+      </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Shop" element={<Shop shopdata={shopdata} />} />

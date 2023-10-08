@@ -19,7 +19,9 @@ const Card = ({ image, id, company, price, Heading }) => {
       <Link to="/Shop/ViewDetails" className='text-red-600 font-semibold hover:text-black '  >View Details</Link>
 
         <button className="bg-green-500 text-white py-2 px-2 rounded-md text-sm  font font-semibold ">
-          Add to Cart
+          {
+            false ? <p>Remove Item</p> : <p>Add to Cart</p>
+          }
         </button>
       </div>
     </div>
