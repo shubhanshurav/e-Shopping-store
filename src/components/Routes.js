@@ -8,7 +8,7 @@ import Shop from '../pages/Shop';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
 import Login from './Login';
-import CartPage from './CartPage';
+import Cart from './Cart'
 import shopData from '../Data';
 import data from '../DataCustomer';
 import Footer from './Footer';
@@ -23,9 +23,7 @@ const [shopdata , setShopData] = useState(shopData);
  
   return (
     <Router>
-      <div>
-          <NavBar />
-      </div>
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Shop" element={<Shop shopdata={shopdata} />} />
@@ -33,7 +31,7 @@ const [shopdata , setShopData] = useState(shopData);
         <Route path="/About" element={<About datacustomer={datacustomer}  />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/CartPage" element={<CartPage />} />
+        <Route path="/Cart" element={<Cart />} />
         <Route path="/ForgetPassword" element={<ForgetPassword/>}/>
         <Route path="/Signup" element={<Signup/>}/>
         <Route path="*" element={<div>Not Found!!</div>} />

@@ -16,7 +16,7 @@ const Card = ({ image, id, company, price, Heading }) => {
       </p>
 
       <div className="flex justify-between mt-6">
-      <Link to="/Shop/ViewDetails" className='text-red-600 font-semibold hover:text-black '  >View Details</Link>
+      <Link to="/Shop/ViewDetails" className='text-red-600 font-semibold hover:text-black '>View Details</Link>
 
         <button className="bg-green-500 text-white py-2 px-2 rounded-md text-sm  font font-semibold ">
           {
