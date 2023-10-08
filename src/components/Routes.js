@@ -10,6 +10,7 @@ import Login from './Login';
 import Cart from './Cart';
 // import shopData from '../Data';
 import Footer from './Footer';
+import Checkout from './Checkout';
 
 const RoutesConfig = ({shopdata}) => {
 
@@ -17,9 +18,7 @@ const RoutesConfig = ({shopdata}) => {
  
   return (
     <Router>
-      <div>
-          <NavBar />
-      </div>
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Shop" element={<Shop shopdata={shopdata} />} />
@@ -27,6 +26,7 @@ const RoutesConfig = ({shopdata}) => {
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="/Checkout" element={<Checkout />} />
         <Route path="*" element={<div>Not Found!!</div>} />
       </Routes>
       <Footer />

@@ -28,3 +28,5 @@ const Card = ({ image, id, company, price, Heading }) => {
 };
 
 export default Card;
+
+

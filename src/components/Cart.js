@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import CartItem from './CartItem';
+import Checkout from './Checkout';
 
 const Cart = () => {
 
@@ -25,7 +26,7 @@ const Cart = () => {
                }
             </div>
 
-           <div className='flex flex-col w-[30%] p-10 border-b-2 border-l-2 border-t-2 border-gray-200'>
+           <div className='flex flex-col w-[30%] p-10 border-2 border-gray-200 m-auto'>
             <div className='mb-72 p-5'>
                 <div className='text-xl text-blue-700 font-medium'>Your Cart</div>
                 <div className='text-4xl text-blue-700 font-semibold '>Summary</div>
@@ -36,7 +37,12 @@ const Cart = () => {
 
               <div className='w-full'>
                 <p>Total Amount: <b className='text-blue-700 pl-4 font-bold'>${totalAmount}</b></p>
-                <button className='bg-blue-700 border-2 border-blue-700 rounded-2xl font-semibold text-sm text-white w-[70%] p-2 mt-5 hover:bg-blue-800'>Pay Now</button>
+             <Link to="/Checkout">
+                <button 
+                 className='bg-blue-700 border-2 border-blue-700 rounded-2xl font-semibold text-sm text-white w-[70%] p-2 mt-5 hover:bg-blue-800'>
+                  Pay Now
+                </button>
+              </Link>
               </div>
            </div>
          </div>):
