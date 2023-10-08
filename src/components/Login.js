@@ -5,11 +5,11 @@ const Login = () => {
   return (
 <div className='m-10 bg-slate-200 p-10 '>
 
-  <form action="" className='flex  flex-col  bg-slate-50 m-auto  place-content-center rounded-xl  items-center w-[25%] h-[50vh] border-slate-200
+  <form action="" className='flex  flex-col  bg-slate-50 m-auto  place-content-center rounded-xl  items-center w-[25%]  border-slate-200
   border-2  '>
 
-<div className='m-10'><h1 className='text-[43px]  text-black font-semibold '>Login</h1>
-<p className='text-[15px] text-slate-500 font-thin' >Welcome back....</p>
+<div className='m-10'><img  src='./assets/Login img.jpg' className='text-[43px]  text-black font-semibold w-[100px] ' alt="logo"/>
+{/* <p className='text-[15px] text-slate-500 font-thin' >Welcome back....</p> */}
 </div >
 
 
