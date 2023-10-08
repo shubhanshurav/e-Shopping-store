@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.SliderDiv {
+    /* width: 500px; */
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 17s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition-delay: 1s;
+}
+
+@keyframes rightMovement {
+    0% {
+        left: 30%;
+    }
+    25% {
+        left: 20%;
+    }
+    75% {
+        left: 30%;
+    }
+    100% {
+        left: 20%;
+    }
+}

@@ -1,47 +1,32 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
-    <div>
-       <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-          <img class="mx-auto h-20 w-20 bg-black rounded-full" src="/assets/user.svg" alt="Your Company" />
-          <h2 class="mt-5 text-center text-3xl font-semibold leading-9 tracking-tight text-gray-900">Sign in</h2>
-        </div>
+<div className='m-10 bg-slate-200 p-10 '>
 
-        <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form class="space-y-6" action="#" method="POST">
-            <div>
-              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
-              <div class="mt-2">
-                <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-              </div>
-            </div>
+  <form action="" className='flex  flex-col  bg-slate-50 m-auto  place-content-center rounded-xl  items-center w-[25%] h-[50vh] border-slate-200
+  border-2  '>
 
-            <div>
-              <div class="flex items-center justify-between">
-                <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
-                <div class="text-sm">
-                  <a href="#" class="font-semibold text-indigo-600 hover:text-indigo-500">Forgot password?</a>
-                </div>
-              </div>
-              <div class="mt-2">
-                <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-              </div>
-            </div>
+<div className='m-10'><h1 className='text-[43px]  text-black font-semibold '>Login</h1>
+<p className='text-[15px] text-slate-500 font-thin' >Welcome back....</p>
+</div >
 
-            <div>
-              <button type="submit" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Sign in</button>
-            </div>
-          </form>
 
-          <p class="mt-10 text-center text-sm text-gray-500">
-            Not a member, Create Account? 
-            <a href="#" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"> Sign up</a>
-          </p>
-        </div>
-      </div>
-    </div>
+<input  className='text-[16px] border border-slate-700 m-5 rounded-md p-1 w-[250px]' type="email"  
+placeholder='Enter Your Email'
+name='email'
+/>
+
+ <input className='text-[16px] border border-slate-700 type="text" rounded-md p-1 w-[250px]' 
+placeholder='Enter Your Password' 
+name='Password'
+ />
+<Link to="/ForgetPassword" className='text-[13px] flex  gap-[95px] p-2 text-red-500 font-semibold '>Forget Password <Link to="/Signup"><span className='text-[15px] font-semibold text-green-500'>Sign-up</span></Link></Link>
+
+<button className='w-[100px] py-1 border  mb-12 mt-8 bg-slate-400 text-green-200 font-semibold rounded-md hover:bg-slate-200 hover:text-black'>Login</button>
+  </form>
+  </div>
   )
 }
 
