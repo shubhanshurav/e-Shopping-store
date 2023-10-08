@@ -9,8 +9,8 @@ const NavBar = () => {
   const {cart} = useSelector((state) => state);
 
   return (
-    <nav className="p-2 bg-blue-900 sticky top-0 w-screen">
-      <div className="container m-auto flex items-center justify-between">
+    <nav className="p-2 bg-blue-900 sticky top-0">
+      <div className="container m-auto grid lg:grid-cols-4 mg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 items-center justify-between">
         {/* Logo */}
           <Link to="/" className="text-center">
             <img src='/assets/AFSLogo.png' className='p-2 w-48 h-18' alt='Logo'/>
