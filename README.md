@@ -1,4 +1,4 @@
-## Apna Fashion Store Documentation
+## Apna Fashion Store - E-Commerce Website
 
 ### Table of Contents
 
@@ -19,13 +19,13 @@ Apna Fashion Store is a web application built using the MERN (MongoDB, Express.j
 
 The following technologies were used to develop Apna Fashion Store:
 
-- `MongoDB` : Database to store product and user information.
-- `Express` .js: Backend framework for building APIs and handling requests.
-- `React` : Frontend library for creating the user interface.
-- `Node.js` : Server runtime for running the backend.
-- `Redux` : State management for the frontend.
-- `React` : Router: For defining and handling routes in the frontend.
-- `Other` : libraries and packages for styling, form handling, and authentication.
+- MongoDB: Database to store product and user information.
+- Express.js: Backend framework for building APIs and handling requests.
+- React: Frontend library for creating the user interface.
+- Node.js: Server runtime for running the backend.
+- Redux: State management for the frontend.
+- React Router: For defining and handling routes in the frontend.
+- Other libraries and packages for styling, form handling, and authentication.
 
 ### 3. Project Structure <a name="project-structure"></a>
 
@@ -45,7 +45,7 @@ Explain how to install and set up the project locally. Include steps for setting
 
 ```bash
 # Clone the repository
-git clone https://github.com/shubhanshurav/Apna-Fashion-Store.git
+git clone https://github.com/shubhanshurav/Apna-FAshion-Store.git
 
 # Navigate to the project directory
 cd your-repo
@@ -58,7 +58,7 @@ cd client
 npm install
 ```
 
-### 5. Usage <a name="usage"></a>
+## 5. Usage <a name="usage"></a>
 
 Describe how to run the application and use its features.
 
@@ -88,15 +88,15 @@ Explain the main routes and components used in your application.
 - `/login`: Login page for user authentication.
 - `/cart`: Cart page for managing shopping cart items.
 
-Certainly! Here are the explanations for contributing guidelines:
+Certainly! Here are the explanations for contributing guidelines and licensing for your project documentation:
 
 ### 7. Contributing <a name="contributing"></a>
 
 We welcome contributions from the community to improve and enhance the Apna Fashion Store project. If you would like to contribute, please follow these guidelines:
 
-#### Submitting Issues
+### Submitting Issues
 
-If you encounter any issues, bugs, or have feature requests, please submit them through the project's [issue tracker](https://github.com/yourusername/your-repo/issues).
+If you encounter any issues, bugs, or have feature requests, please submit them through the project's [issue tracker](https://github.com/shubhanshurav/Apna-FAshion-Store/issues).
 
 When submitting issues, provide detailed information, including:
 
@@ -105,7 +105,7 @@ When submitting issues, provide detailed information, including:
 - Steps to reproduce the issue (if applicable).
 - Screenshots or code snippets that help illustrate the problem (if applicable).
 
-#### Pull Requests
+### Pull Requests
 
 We encourage you to submit pull requests for bug fixes, enhancements, or new features. To contribute via pull request, please follow these steps:
 
@@ -119,10 +119,9 @@ We encourage you to submit pull requests for bug fixes, enhancements, or new fea
 
 Your pull request will be reviewed by the project maintainers. Please be patient during the review process, and be ready to address any feedback or comments.
 
-Thank you for considering contributing to Apna Fashion Store, and we appreciate your support!}
+Thank you for considering contributing to Apna Fashion Store, and we appreciate your support!
 
-
-### 8. Project Admins <a name ="project-admins"></a>
+### 8. Project Admins <a name="project-admins"></a>
 
 #### Shubhanshu Rao
 
