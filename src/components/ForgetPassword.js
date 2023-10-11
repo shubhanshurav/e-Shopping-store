@@ -27,7 +27,7 @@ id='name'
 />
 
 
-<p type="button" onClick={()=>setInfoShow(true)} className=' px-20 py-2 mb-4  bg-green-500 text-black font-bold rounded-md hover:cursor-pointer '>send</p>
+<p type="button" onClick={()=>setInfoShow(true)} className=' px-20 py-2 mb-4  bg-green-500 text-black font-bold rounded-md hover:cursor-pointer '>Send</p>
 
 {
       infoShow?( <p className='text-green-500 mb-4 font-semibold '>Send Reset information Successfully.....</p>):(null)

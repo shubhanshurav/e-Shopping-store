@@ -126,17 +126,19 @@ const FeatureProducts = () => {
             </div>
          </div>
 
-         <div className='flex flex-wrap flex-row place-content-center m-auto pt-14'>
+         <div className='grid lg:grid-cols-2 sm:grid-cols-1 place-content-center m-auto p-14'>
             {/* card1 */}
-           <div className='flex flex-row border-2 border-gray-300 m-4 h-52 rounded-2xl'>
-             <img src='/assets/banner/b17.jpg' className='w-64 rounded-2xl p-2'/>
-             <div className='p-4'>
+           <div className='grid lg:grid-cols-2 sm:grid-cols-1 border-2 border-gray-300 m-2 p-3 rounded-2xl'>
+             <div className=''>
+               <img src='/assets/banner/b17.jpg' className='w-64 rounded-2xl p-2'/>
+             </div>
+             <div className='p-4 text-md'>
                <h1>Hot Deals</h1>
                <p>Buy One get One free.</p>
                <p>The latest best collection in our closet</p>
                <p>Feel Cute with our outfits</p>
                <Link to='/'>
-                  <button className="bg-orange-600 px-6 py-2 border-solid border-2 border-black rounded-2xl hover:bg-slate-200 hover:text-black place-content-center">
+                  <button className="bg-orange-600 px-3 py-1 text-sm border-solid border-2 border-black rounded-2xl hover:bg-slate-200 hover:text-black place-content-center">
                   Explore Now
                   </button>
                </Link>
@@ -144,15 +146,17 @@ const FeatureProducts = () => {
            </div>
 
           {/* card2 */}
-           <div className='flex flex-row border-2 border-gray-300 m-4 h-52 rounded-2xl'>
-             <img src='/assets/banner/b10.jpg' className='w-64 rounded-2xl p-2'/>
-             <div className='p-4'>
+           <div className='grid lg:grid-cols-2 sm:grid-cols-1  border-2 border-gray-300 m-2 p-3 rounded-2xl'>
+             <div className=''>
+                <img src='/assets/banner/b10.jpg' className='w-64 rounded-2xl p-2'/>
+             </div>
+             <div className='p-4 text-md '>
                <p>Season-In</p>
                <p>All Weather Attire</p>
                <p>It never matter which season it is</p>
                <p>We got you covered</p>
                <Link to='/'>
-                  <button className="bg-orange-600 px-6 py-2 border-solid border-2 border-black rounded-2xl hover:bg-slate-200 hover:text-black place-content-center">
+                  <button className="bg-orange-600 px-3 py-1 text-sm border-solid border-2 border-black rounded-2xl hover:bg-slate-200 hover:text-black place-content-center">
                   Explore Now
                   </button>
                </Link>

@@ -30,12 +30,12 @@ const Login = () => {
 <p className='text-[15px] text-slate-500 font-thin' >Welcome back....</p>
 </div >
 
-
-<input  className='text-[16px] border outline-none border-slate-400 m-5 rounded-md p-1 w-[250px]' type="email"  
-placeholder='Enter Your Email'
-name='email'
-onChange={changeHandler}
-/>
+        <input
+          className="text-[16px] border border-slate-700 m-5 rounded-md p-1 w-[250px]"
+          type="email"
+          placeholder="Enter Your Email"
+          name="email"
+        />
 
  <input className='text-[16px] border outline-none border-slate-400 type="text" rounded-md p-1 w-[250px]' 
 placeholder='Enter Your Password' 
