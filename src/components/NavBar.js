@@ -70,7 +70,7 @@ const NavBar = () => {
           <Link to="/Login" className="text-white w-7">
             <img src='/assets/user.svg' alt='UserLogo'/>
           </Link>
-          <Link to="/Cart" className="text-white flex place-content-center w-7">
+          <Link to="/" className="text-white flex place-content-center w-7">
             <img src='/assets/wishlist.svg' alt='wishlist'/>
           </Link>
           <Link to="/Cart" className="text-white flex place-content-center w-7 relative">

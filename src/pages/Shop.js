@@ -7,28 +7,27 @@ import Product from '../components/Product';
 
 const Shop = () => {
 
-  const API_URL = "https://fakestoreapi.com/products";
+  const API_URL = "https://dummyjson.com/products/";
   const [loading, setLoading] = useState(false);
   const [posts, setPosts] = useState([]);
 
   const [shopdata , setShopData] = useState(shopData);
 
   async function fetchProductData() {
-    setLoading(true);
+  setLoading(true);
 
-    try{
-      const res = await fetch(API_URL);
-      const data = await res.json();
+  try {
+    const res = await fetch(API_URL);
+    const data = await res.json();
 
-      setPosts(data);
-    }
-    catch(error){
-       console.log("There is something wrong,please try agai!!");
-       setPosts([]);
-    }
-
-    setLoading(false);
+    setPosts(data.products);
+  } catch (error) {
+    console.error("There is something wrong, please try again!!");
+    setPosts([]);
   }
+
+  setLoading(false);
+}
 
   useEffect( () => {
     fetchProductData();
