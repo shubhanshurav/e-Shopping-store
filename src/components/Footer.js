@@ -3,6 +3,37 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className='bg bg-gray-100 '>
+  
+<div className='flex  flex-col justify-center items-center m-10 py-10  '>
+
+<div className='flex gap-10'>
+<div className=' border-2 p-3 rounded-xl bg-slate-100 '>   
+      <img src="/assets/Saketimg.jpeg" alt="deve" className='w-[280px] h-[300px] object-cover rounded-xl Creators'/>
+      <p className='flex justify-center text-[25px] text-rose-950 font-semibold uppercase m-3'>Saket Singh</p>
+    <div className='flex justify-center gap-6 m-2  '>    
+      <a href="https://www.linkedin.com/in/saket-singh-810824240"><img src="/assets/linkedin-img.png" alt="Linkedin" className='w-[40px]'/></a>
+      <a href="https://github.com/SAKETSINGH120"><img src="/assets/Github-img.png" alt="Github" className='w-[40px] '/></a>
+    </div>
+</div>
+<div className=' border-2 p-3 rounded-xl bg-slate-100'>   
+      <img src="/assets/shubhanshuimg.jpg" alt="deve" className='w-[280px] h-[300px] object-cover rounded-xl Creators'/>
+      <p className='flex justify-center text-[25px] text-rose-950 font-semibold uppercase m-3'>Shubhanshu Rav </p>
+    <div className='flex justify-center gap-6 m-2  '>    
+      <a href="https://www.linkedin.com/in/shubhanshu-rao-052320208/"><img src="/assets/linkedin-img.png" alt="Linkedin" className='w-[40px]'/></a>
+      <a href="https://github.com/shubhanshurav"><img src="/assets/Github-img.png" alt="Github" className='w-[40px] '/></a>
+    </div>
+</div>
+
+</div>
+
+<div className=''>  
+     <p className=' text-[40px] text-red-700    font-semibold uppercase mt-5' >Creators</p>
+</div>
+
+</div>
+
+
+
         <div className='grid lg:grid-cols-4 mg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 border-b-2 border-t-2 border-gray-300 m-5'>
             {/* contact  */}
             <div className='p-5'>

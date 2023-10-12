@@ -33,9 +33,6 @@ id='name'
       infoShow?( <p className='text-green-500 mb-4 font-semibold '>Send Reset information Successfully.....</p>):(null)
 }
 
-
-
-
   </form>
   </div>
 
