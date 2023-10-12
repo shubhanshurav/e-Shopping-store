@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-blue-900 sticky top-0 p-2">
+    <nav className="bg-blue-900 sticky top-0">
       <div className="m-auto flex lg:flex-row ">
         
         {/* Hamburger Menu */}
@@ -27,9 +27,9 @@ const NavBar = () => {
         </div>
 
         {/* Logo */}
-       <div className='m-auto'>
-           <Link to="/" className={`text-center ${isMenuOpen ? 'hidden' : 'flex'}`}>
-            <img src='/assets/AFSLogo.png' className='lg:w-48 sm:w-56 ' alt='Logo'/>
+        <div className={`m-auto lg:flex ${isMenuOpen ? 'hidden' : 'block'}`}>
+           <Link to="/" className="text-center ">
+             <img src='/assets/AFSLogo.png' className='lg:w-44 sm:w-56 ' alt='Logo'/>
            </Link>
        </div>
 
@@ -39,9 +39,9 @@ const NavBar = () => {
               <input
                 type="text"
                 placeholder="Find Product here..."
-                className="w-44 py-2 px-2 rounded-l-md border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
+                className="w-44 py-1 px-1 rounded-l-md border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
               />
-              <button className='w-20 py-2 px-2 rounded-r-md bg-transparent hover:text-stone-100 hover:bg-amber-500 text-white border-y-2 border-r-2'>
+              <button className='w-20 py-1 px-1 rounded-r-md bg-transparent hover:text-stone-100 hover:bg-amber-500 text-white border-y-2 border-r-2'>
                 Search
               </button>
           </div>
@@ -66,7 +66,7 @@ const NavBar = () => {
         </div>
 
         {/* User Actions */}
-        <div className={`flex flex-row space-x-8 m-auto ${isMenuOpen ? 'hidden' : 'flex'}`}>
+        <div className={`lg:flex flex-row space-x-8 m-auto ${isMenuOpen ? 'hidden' : 'flex'}`}>
           <Link to="/Login" className="text-white w-7">
             <img src='/assets/user.svg' alt='UserLogo'/>
           </Link>
