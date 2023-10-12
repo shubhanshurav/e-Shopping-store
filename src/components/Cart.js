@@ -17,7 +17,7 @@ const Cart = () => {
       { 
          cart.length > 0 ?
          (<div className='flex flex-row items-center justify-between m-auto p-5'>
-            <div className='my-5 w-[66%] border-2 border-gray-200'>
+            <div className='m-auto w-[66%] border-[3px] border-gray-200'>
                {
                 cart.map( (item, index) => {
                   return <CartItem key={item.id} item={item} itemIndex={index} />
@@ -25,8 +25,8 @@ const Cart = () => {
                }
             </div>
 
-           <div className='flex flex-col w-[30%] p-10 border-b-2 border-l-2 border-t-2 border-gray-200'>
-            <div className='mb-72 p-5'>
+           <div className='flex flex-col w-[30%] p-10 border-[3px] text-center border-gray-200'>
+            <div className='mb-64 p-5'>
                 <div className='text-xl text-blue-700 font-medium'>Your Cart</div>
                 <div className='text-4xl text-blue-700 font-semibold '>Summary</div>
                 <p className='font-medium'>
@@ -45,7 +45,7 @@ const Cart = () => {
          </div>):
          (<div className='text-center mt-44 h-[60vh]'> 
              <h1 className='font-semibold text-4xl'>Cart Empty</h1>
-             <Link to="/">
+             <Link to="/Shop">
                  <button 
                  className='bg-blue-700 border-2 border-blue-700 rounded-2xl font-semibold text-sm text-white w-[10%] p-2 mt-5 hover:bg-blue-800'>
                   Shop Now

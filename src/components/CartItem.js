@@ -1,6 +1,6 @@
 import React from "react";
 import { toast } from "react-hot-toast";
-import { FcDeleteDatabase } from "react-icons/fc";
+import { RiDeleteBin2Line } from "react-icons/ri";
 import { useDispatch } from "react-redux";
 import { remove } from "../redux/Slices/CartSlice";
 import StarRating from './StarRating'; 
@@ -15,7 +15,7 @@ const CartItem = ({ item, itemIndex }) => {
 
   return (
     <div>
-      <div className="flex lg:flex-row sm:flex-col gap-3 p-4 m-auto pl-5 border-b-2 border-gray-200">
+      <div className="flex lg:flex-row sm:flex-col gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
         <div className="h-[180px] m-auto">
           <img src={item.thumbnail} className="w-full h-full" />
         </div>
@@ -44,9 +44,9 @@ const CartItem = ({ item, itemIndex }) => {
             <p className="text-blue-700 font-semibold">${item.price}</p>
             <div
               onClick={removeFromCart}
-              className="cursor-pointer rounded-full bg-red-500 p-3"
+              className="cursor-pointer rounded-full bg-red-600 text-white p-2 text-3xl"
             >
-              <FcDeleteDatabase />
+              <RiDeleteBin2Line />
             </div>
           </div>
         </div>
