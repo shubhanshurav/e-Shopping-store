@@ -57,15 +57,15 @@ const HomePage = () => {
     
       {/* Banner  */}  
       <div
-        className="bg-cover bg-no-repeat bg-center sm:h-64 md:h-96 lg:h-120 scroll-smooth"
+        className="bg-cover bg-no-repeat bg-center sm:h-64 md:h-96 lg:h-120"
         style={{ backgroundImage: `url('/assets/back.jpg')`}}
       >
         {/* Content inside the banner */}
         <div className="text-white text-left lg:pt-16 md:pt-10 sm:pt-8 py-16 px-16 inline-block">
-          <p className="sm:text-xl sm:text-2xl lg:text-xl text-black pb-8">
+          <p className="sm:text-xl md:text-2xl lg:text-xl text-black pb-8">
             Trade in offer
           </p>
-          <h1 className="sm:text-3xl md:text-4xl lg:text-5xl text-amber-600 font-bold lg:pb-5 sm:pb-4">
+          <h1 className="sm:text-2xl md:text-4xl lg:text-5xl text-amber-600 font-bold lg:pb-5 sm:pb-4">
             Super Value Deals
           </h1>
           <h4 className="sm:text-xl md:text-2xl lg:text:3xl  text-black pb-5 sm:pb-4">

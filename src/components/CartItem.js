@@ -15,11 +15,11 @@ const CartItem = ({item, itemIndex}) => {
 
   return (
     <div>
-        <div className='flex flex-row gap-3 p-4 m-auto pl-5 border-b-2 border-gay-400'>
+        <div className='flex lg:flex-row sm:flex-col gap-3 p-4 m-auto pl-5 border-b-2 border-gray-200'>
             <div className='h-[180px] m-auto'>
                 <img src ={item.image} className='w-full h-full'/>
             </div>
-            <div className='w-[70%] m-auto px-10'>
+            <div className=' m-auto px-10'>
                 <h1 className='text-gray-700 font-semibold text-lg text-left mt-1'>{item.title}</h1>  
                 <h1 className='text-gray-400 font-normal text-[13px] text-left'>{item.description.split(" ").slice(0,10).join(" ")+"..."}</h1>
                 <h1>{item.category}</h1>
