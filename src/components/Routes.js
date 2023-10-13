@@ -19,9 +19,9 @@ import Checkout from './Checkout';
 
 const RoutesConfig = () => {
 
-const [datacustomer, setDatacutomer] = useState(data);
+const [datacustomer, setDatacustomer] = useState(data);
 const [shopdata , setShopData] = useState(shopData);
- 
+
   return (
     <Router>
       <NavBar />

@@ -8,10 +8,12 @@ const Cart = () => {
   const {cart} = useSelector((state) => state);
   const [totalAmount, setTotalAmount] = useState(0);
 
-  useEffect( () => {
-    setTotalAmount(cart.reduce( (acc, curr) => acc + curr.price,0).toFixed(2));
-  }, [cart])
-
+  useEffect(() => {
+    setTotalAmount(
+      cart.reduce((acc, curr) => acc + (Number(curr.price) || 0), 0).toFixed(2)
+    );
+  }, [cart]);
+  
   return (
     <div> 
       { 
@@ -24,7 +26,6 @@ const Cart = () => {
                 })
                }
             </div>
-
            <div className='flex flex-col w-[30%] p-10 border-[3px] text-center border-gray-200'>
             <div className='mb-64 p-5'>
                 <div className='text-xl text-blue-700 font-medium'>Your Cart</div>

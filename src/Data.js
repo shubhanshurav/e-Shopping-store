@@ -5,6 +5,8 @@ const shopData = [
     image: "../assets/products/f1.jpg",
     price: "49.9",
     Heading: "Men's Dri-FIT T-Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 2,
@@ -12,6 +14,8 @@ const shopData = [
     image: "../assets/products/f2.jpg",
     price: "42.9",
     Heading: "Slim Fit Dress Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 3,
@@ -19,6 +23,8 @@ const shopData = [
     image: "../assets/products/f3.jpg",
     price: "44.9",
     Heading: "Men's Dri-FIT T-Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 4,
@@ -26,6 +32,8 @@ const shopData = [
     image: "../assets/products/f4.jpg",
     price: "49.9",
     Heading: "Men's 1950s Sportswear",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 5,
@@ -33,6 +41,8 @@ const shopData = [
     image: "../assets/products/f5.jpg",
     price: "49.9",
     Heading: "Men's 1950s Sportswear",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 6,
@@ -40,6 +50,8 @@ const shopData = [
     image: "../assets/products/f6.jpg",
     price: "49.9",
     Heading: "Men's Dri-FIT T-Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 7,
@@ -47,6 +59,8 @@ const shopData = [
     image: "../assets/products/f7.jpg",
     price: "49.9",
     Heading: "Slim Fit Dress Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 8,
@@ -54,13 +68,17 @@ const shopData = [
     image: "../assets/products/f8.jpg",
     price: "49.9",
     Heading: "Slim Fit Dress Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 9,
     company: "levis",
     image: "../assets/products/img-4.png",
     price: "49.9",
-    Heading: "",
+    Heading: "Men's Dri-FIT T-Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 10,
@@ -68,6 +86,8 @@ const shopData = [
     image: "../assets/products/img1.png",
     price: "49.9",
     Heading: "Men's Dri-FIT T-Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 11,
@@ -75,6 +95,8 @@ const shopData = [
     image: "../assets/products/n6.jpg",
     price: "49.9",
     Heading: "Women's Basic Tee, Men's Rebel Bold Tee",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 12,
@@ -82,6 +104,8 @@ const shopData = [
     image: "../assets/products/img3.png",
     price: "49.9",
     Heading: "Women's Badge of Sport Tee",
+    rating:3.5,
+    stock:95,
   },
 
   {
@@ -90,6 +114,8 @@ const shopData = [
     image: "../assets/products/img4.png",
     price: "49.9",
     Heading: "Men's 1950s Sportswear",
+    rating:4,
+    stock:95,
   },
   {
     id: 14,
@@ -97,6 +123,8 @@ const shopData = [
     image: "../assets/products/img5.png",
     price: "49.9",
     Heading: "Men's Dri-FIT T-Shirt",
+    rating:4,
+    stock:95,
   },
   {
     id: 15,
@@ -104,6 +132,8 @@ const shopData = [
     image: "../assets/products/img6.png",
     price: "49.9",
     Heading: "Women's Badge of Sport Tee",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 17,
@@ -111,6 +141,8 @@ const shopData = [
     image: "../assets/products/n7.jpg",
     price: "49.9",
     Heading: "Women's Badge of Sport Tee",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 18,
@@ -118,6 +150,8 @@ const shopData = [
     image: "../assets/products/n8.jpg",
     price: "49.9",
     Heading: "Men's Cotton Classic Short Sleeve Crew Neck T-Shirt",
+    rating:4.2,
+    stock:95,
   },
   {
     id: 19,
@@ -125,6 +159,8 @@ const shopData = [
     image: "../assets/products/n2.jpg",
     price: "49.9",
     Heading: "Women's Basic Tee, Men's Rebel Bold Tee",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 20,
@@ -132,6 +168,8 @@ const shopData = [
     image: "../assets/products/n1.jpg",
     price: "49.9",
     Heading: "Men's 1950s Sportswear",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 21,
@@ -139,6 +177,8 @@ const shopData = [
     image: "../assets/products/n2.jpg",
     price: "49.9",
     Heading: "Women's Badge of Sport Tee",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 22,
@@ -146,6 +186,8 @@ const shopData = [
     image: "../assets/products/n3.jpg",
     price: "49.9",
     Heading: "Slim Fit Dress Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 23,
@@ -153,6 +195,8 @@ const shopData = [
     image: "../assets/products/n4.jpg",
     price: "49.9",
     Heading: "Women's Basic Tee, Men's Rebel Bold Tee",
+    rating:4.5,
+    stock:95,
   },
   {
     id: 24,
@@ -160,6 +204,8 @@ const shopData = [
     image: "../assets/products/n4.jpg",
     price: "49.9",
     Heading: "Slim Fit Dress Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 25,
@@ -167,6 +213,8 @@ const shopData = [
     image: "../assets/products/n5.jpg",
     price: "49.9",
     Heading: "Slim Fit Dress Shirt",
+    rating:3.5,
+    stock:95,
   },
   {
     id: 25,
@@ -174,6 +222,8 @@ const shopData = [
     image: "../assets/products/img5.png",
     price: "49.9",
     Heading: "Women's Basic Tee, Men's Rebel Bold Tee",
+    rating:5,
+    stock:95,
   },
   {
     id: 26,
@@ -181,6 +231,8 @@ const shopData = [
     image: "../assets/products/img6.png",
     price: "49.9",
     Heading: "Slim Fit Dress Shirt",
+    rating:3.5,
+    stock:95,
   },
 ];
 export default shopData;

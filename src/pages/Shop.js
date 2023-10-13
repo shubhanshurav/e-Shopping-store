@@ -55,11 +55,11 @@ const Shop = () => {
         </p>
       </div>
 
-      <div className="mt-16">
+      <div className="mt-12">
         {
           loading ? <Spinner /> : 
           posts.length > 0 ?
-          (<div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl p-2 mx-auto space-y-6 space-x-6 min-h-[80vh]'>
+          (<div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl min-w-3xl p-2 mx-auto space-y-8 space-x-10 min-h-[80vh]'>
               {
                 posts.map( (post) => (
                 <Product key = {post.id} post = {post} />
@@ -72,10 +72,21 @@ const Shop = () => {
         }
       </div>
 
-      <div className="flex flex-row place-content-center w-[100vw] flex-wrap mt-[7%] ">
-        {shopdata.map((item) => {
-          return <Card {...item}></Card>;
-        })}
+      <div className="mt-12">
+        {
+          // loading ? <Spinner /> : 
+          shopdata.length > 0 ?
+          (<div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl min-w-3xl p-2 mx-auto space-y-8 space-x-10 min-h-[80vh]'>
+              {
+                shopdata.map((card) => (
+                  <Card key = {card.id} card = {card} />
+                ))
+              }
+            </div> ) :
+            <div className="flex justify-center items-center">
+              <p>No Data Found</p>
+            </div>
+        }
       </div>
 
       <div className="flex justify-center gap-2 text-green-400 cursor-pointer font-semibold ">

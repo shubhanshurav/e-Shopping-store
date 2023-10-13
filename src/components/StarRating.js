@@ -14,7 +14,6 @@ const StarRating = ({ rating }) => {
     } else {
       starClassName = 'text-gray-300';
     }
-
     stars.push(
 
       <span key={i} className={`text-xl ${starClassName}`}>
