@@ -17,29 +17,29 @@ const CartItem = ({ item, itemIndex}) => {
   return (
     <div>
       <div className="flex lg:flex-row sm:flex-col gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
-      <div className="h-[180px] m-auto">
+      <div className="m-auto lg:w-[40%]">
         {item.thumbnail ? (
-          <img src={item.thumbnail} className="w-full h-full" />
+          <img src={item.thumbnail} className="w-full h-full rounded-md" />
         ) : item.image ? (
-          <img src={item.image} className="w-full h-full rounded-lg" alt="cartimage" />
+          <img src={item.image} className="w-full h-full rounded-md" alt="cartimage" />
         ) : null}
       </div>
 
-        <div className=" m-auto px-10">
+        <div className=" m-auto px-10 lg:w-[35%] sm:w-[70%]">
           <h1 className="text-gray-700 font-semibold text-lg text-left mt-1">
             {item.title}
           </h1>
           <div>
           {item.description ? (
-            <p className='w-40 text-gray-400 font-normal text-[12px] text-left py-1'>
+            <p className='w-40 text-gray-400 font-normal text-[12px] py-1'>
               {item.description.split(" ").slice(0, 10).join(" ") + "..."}
             </p>
           ) : null}
         </div>
-          <h1 className="text-gray-700 font-semibold text-lg text-left mt-1">
+          <h1 className="text-gray-700 font-md text-lg text-left mt-1 uppercase">
             {item.company}
           </h1>
-          <h1 className="text-gray-700 font-semibold text-lg text-left mt-1">
+          <h1 className="text-gray-700 font-light text-xl text-left mt-1 py-3">
             {item.Heading}
           </h1>  
           <h1>{item.category}</h1>
@@ -56,7 +56,7 @@ const CartItem = ({ item, itemIndex}) => {
               <StarRating rating={item.rating} />
             </div>
           </div>
-          <div className="flex flex-row w-full gap-12 items-center pt-4">
+          <div className="flex flex-row w-full gap-12 items-center pt-4 sm:justify-between">
             <p className="text-blue-700 font-semibold">${item.price}</p>
             <div
               onClick={removeFromCart}
