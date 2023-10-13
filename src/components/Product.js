@@ -20,13 +20,13 @@ const Product = ({ post }) => {
   }
 
   return (
-    <div className='flex-col items-center justify-between cursor-pointer transition duration-300 ease-in shadow-xl gap-3 p-4 mt-10 ml-5 pl-5 rounded-xl border-2 border-gray-200'>
+    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl gap-3 p-4 mt-10 ml-5 pl-5 rounded-xl border-2 border-gray-200'>
       <div>
         <p className='text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1 uppercase'>{post.title}</p>
       </div>
       <div>
           {post.description ? (
-            <p className='w-40 text-gray-400 font-normal text-[12px] text-left py-1'>
+            <p className='w-45 text-gray-400 font-normal text-[12px] text-left py-1'>
               {post.description.split(" ").slice(0, 10).join(" ") + "..."}
             </p>
           ) : null}
@@ -50,7 +50,7 @@ const Product = ({ post }) => {
             <StarRating rating={post.rating} /> 
          </div>
       </div>
-      <div className='flex justify-between gap-12 items-center w-full mt-5'>
+      <div className='flex justify-between items-center w-full mt-2'>
         <div>
           <p className='text-blue-700 font-semibold m-auto'>${post.price}</p>
         </div>

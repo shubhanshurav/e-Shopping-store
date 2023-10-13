@@ -21,7 +21,7 @@ const Card = ({ card }) => {
   }
 
   return (
-    <div className="w-[250px] border-inherit border rounded-xl py-2 px-3 m-5">
+    <div className="border-inherit border rounded-xl py-2 px-3 m-auto">
       <img src={card.image} className="w-full rounded-xl" alt="" />
 
       <h1 className="text-gray-700 font-semibold text-lg text-left mt-1">

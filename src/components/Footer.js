@@ -4,31 +4,32 @@ const Footer = () => {
   return (
     <div className='bg bg-gray-100 '>
   
-<div className='flex  flex-col justify-center items-center m-10 py-10  '>
+<div className='flex flex-col items-center m-auto py-10  '>
 
-<div className='flex gap-10'>
-<div className=' border-2 p-3 rounded-xl bg-slate-100 '>   
-      <img src="/assets/Saketimg.jpeg" alt="deve" className='w-[280px] h-[300px] object-cover rounded-xl Creators'/>
-      <p className='flex justify-center text-[25px] text-rose-950 font-semibold uppercase m-3'>Saket Singh</p>
-    <div className='flex justify-center gap-6 m-2  '>    
-      <a href="https://www.linkedin.com/in/saket-singh-810824240"><img src="/assets/linkedin-img.png" alt="Linkedin" className='w-[40px]'/></a>
-      <a href="https://github.com/SAKETSINGH120"><img src="/assets/Github-img.png" alt="Github" className='w-[40px] '/></a>
+<div className='my-10 border-b-4 border-red-700'>  
+     <p className=' text-red-700 font-light text-4xl uppercase py-2' >Creators</p>
+</div>
+
+<div className='grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-[70%] m-auto gap-10'>
+    <div className='border-2 border-gray-500 p-3 rounded-xl m-auto bg-slate-100  px-6 py-6'>
+        <img src="/assets/Saketimg.jpeg" alt="deve" className='object-cover rounded-full border-8 border-blue-700 Creators'/>
+        <p className='flex justify-center text-[25px] text-rose-950 font-light font-serif uppercase m-auto py-3'>Saket Singh</p>
+        <div className='flex justify-center gap-6 m-2 items-center'>    
+        <a href="https://www.linkedin.com/in/saket-singh-810824240"><img src="/assets/linkedin-img.png" alt="Linkedin" className='w-[40px]'/></a>
+        <a href="https://github.com/SAKETSINGH120"><img src="/assets/GitHub-img.png" alt="Github" className='w-[52px] '/></a>
+        </div>
     </div>
-</div>
-<div className=' border-2 p-3 rounded-xl bg-slate-100'>   
-      <img src="/assets/shubhanshuimg.jpg" alt="deve" className='w-[280px] h-[300px] object-cover rounded-xl Creators'/>
-      <p className='flex justify-center text-[25px] text-rose-950 font-semibold uppercase m-3'>Shubhanshu Rav </p>
-    <div className='flex justify-center gap-6 m-2  '>    
-      <a href="https://www.linkedin.com/in/shubhanshu-rao-052320208/"><img src="/assets/linkedin-img.png" alt="Linkedin" className='w-[40px]'/></a>
-      <a href="https://github.com/shubhanshurav"><img src="/assets/Github-img.png" alt="Github" className='w-[40px] '/></a>
+    <div className='border-2 border-gray-500 p-3 rounded-xl m-auto bg-slate-100 px-6 py-6'>   
+        <img src="/assets/shubhanshuimg.jpg" alt="deve" className='object-cover rounded-full border-8 border-blue-700 Creators'/>
+        <p className='flex justify-center text-[25px] text-rose-950 font-light font-serif uppercase m-auto py-3'>Shubhanshu Rav </p>
+        <div className='flex justify-center gap-6 m-2 items-center'>    
+            <a href="https://www.linkedin.com/in/shubhanshu-rao-052320208/"><img src="/assets/linkedin-img.png" alt="Linkedin" className='w-[40px]'/></a>
+            <a href="https://github.com/shubhanshurav"><img src="/assets/GitHub-img.png" alt="Github" className='w-[52px]'/></a>
+        </div>
     </div>
-</div>
 
 </div>
 
-<div className=''>  
-     <p className=' text-[40px] text-red-700    font-semibold uppercase mt-5' >Creators</p>
-</div>
 
 </div>
 
