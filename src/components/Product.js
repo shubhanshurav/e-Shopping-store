@@ -20,9 +20,9 @@ const Product = ({ post }) => {
   }
 
   return (
-    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl gap-3 p-4 mt-10 ml-5 pl-5 rounded-xl border-2 border-gray-200'>
-      <div>
-        <p className='text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1 uppercase'>{post.title}</p>
+    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl p-4 m-auto pl-5 rounded-xl border-2 border-gray-200'>
+      <div className='text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1 uppercase'>
+        <p >{post.title}</p>
       </div>
       <div>
           {post.description ? (

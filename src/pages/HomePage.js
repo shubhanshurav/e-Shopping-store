@@ -2,6 +2,7 @@
 import React from "react";
 import FeatureProducts from "../components/FeatureProducts";
 import { Link } from "react-router-dom";
+import Creators from "./Creators";
 // import React, { useEffect, useState } from "react";
 // import Spinner from '../components/Spinner';
 // import Product from '../components/Product';
@@ -157,6 +158,12 @@ const HomePage = () => {
             </div>
         </div>
       </div>
+
+       {/* Creators */}
+      <div>
+         <Creators />
+      </div>
+      
     </div>
   );
 }

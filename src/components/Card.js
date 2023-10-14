@@ -24,11 +24,11 @@ const Card = ({ card }) => {
     <div className="border-inherit border rounded-xl py-2 px-3 m-auto">
       <img src={card.image} className="w-full rounded-xl" alt="" />
 
-      <h1 className="text-gray-700 font-semibold text-lg text-left mt-1">
+      <h1 className="text-gray-700 font-normal text-md text-left mt-1 uppercase">
             {card.company}
       </h1> 
 
-      <h1 className="text-gray-700 font-semibold text-lg text-left mt-1">
+      <h1 className="text-gray-800 font-semibold text-lg text-left mt-1 py-2">
             {card.Heading}
       </h1> 
       <div className='text-sm'>
@@ -44,9 +44,9 @@ const Card = ({ card }) => {
          </div>
       </div>
 
-      <p className="text-green-400 mt-3 ">
+      <p className="text-blue-700 font-bold mt-3 ">
         {" "}
-        {card.price} <s className="text-red-400 ">59.00$</s>
+        ${card.price} <s className="text-red-400 px-2">59.00$</s>
       </p>
 
       <div className="flex justify-between mt-6">

@@ -126,9 +126,9 @@ const FeatureProducts = () => {
             </div>
          </div>
 
-         <div className='grid lg:grid-cols-2 sm:grid-cols-1 place-content-center m-auto p-14'>
+         <div className='grid lg:grid-cols-2 sm:grid-cols-2 place-content-center m-auto p-14'>
             {/* card1 */}
-           <div className='grid lg:grid-cols-2 sm:grid-cols-1 border-2 border-gray-300 m-2 p-3 rounded-2xl'>
+           <div className='grid lg:grid-cols-2 sm:grid-flow-row border-2 border-gray-300 m-2 p-3 rounded-2xl'>
              <div className=''>
                <img src='/assets/banner/b17.jpg' className='w-64 rounded-2xl p-2'/>
              </div>
@@ -146,7 +146,7 @@ const FeatureProducts = () => {
            </div>
 
           {/* card2 */}
-           <div className='grid lg:grid-cols-2 sm:grid-cols-1  border-2 border-gray-300 m-2 p-3 rounded-2xl'>
+           <div className='grid lg:grid-cols-2 border-2 border-gray-300 m-2 p-3 rounded-2xl'>
              <div className=''>
                 <img src='/assets/banner/b10.jpg' className='w-64 rounded-2xl p-2'/>
              </div>
