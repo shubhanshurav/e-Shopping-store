@@ -3,6 +3,7 @@ import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from 'react-redux';
 import { add, remove} from '../redux/Slices/CartSlice';
 
+
 const Product = ({post}) => {
 
   const {cart} = useSelector((state) => state) ;
@@ -17,10 +18,10 @@ const Product = ({post}) => {
     dispatch(remove(post.id));
     toast.error("Item removed from Cart");
   }
-
+  
   return (
    //  <div className='flex flex-row bg-gray-200 border-2 border-gray-500 p-5 rounded-lg'>
-        <div className='flex-col items-center justify-between cursor-pointer transition duration-300 ease-in shadow-xl gap-3 p-4 mt-10 ml-5 pl-5 rounded-xl border-2 border-gray-200'>
+        <div className='flex-col items-center justify-between cursor-pointer transition duration-300 ease-in shadow-xl gap-3 p-4 mt-10 ml-5 pl-5 rounded-xl border-2 border-gray-200 ' >
             <div>
                <p className='text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1'>{post.title}</p>
             </div>

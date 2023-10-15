@@ -5,13 +5,14 @@ import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 import Spinner from '../components/Spinner';
 import Product from '../components/Product';
 
-const Shop = () => {
+const Shop=() => {
 
   const API_URL = "https://fakestoreapi.com/products";
   const [loading, setLoading] = useState(false);
   const [posts, setPosts] = useState([]);
 
   const [shopdata , setShopData] = useState(shopData);
+
 
   async function fetchProductData() {
     setLoading(true);
@@ -23,7 +24,7 @@ const Shop = () => {
       setPosts(data);
     }
     catch(error){
-       console.log("There is something wrong,please try agai!!");
+       console.log("There is something wrong,please try again!!");
        setPosts([]);
     }
 
@@ -63,7 +64,7 @@ const Shop = () => {
           (<div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl p-2 mx-auto space-y-6 space-x-6 min-h-[80vh]'>
               {
                 posts.map( (post) => (
-                <Product key = {post.id} post = {post} />
+                <Product key = {post.id} post = {post}  />
               ) )
               }
             </div> ) :
@@ -75,7 +76,7 @@ const Shop = () => {
 
       <div className="flex flex-row place-content-center w-[100vw] flex-wrap mt-[7%] ">
         {shopdata.map((item) => {
-          return <Card {...item}></Card>;
+          return <Card {...item} ></Card>;
         })}
       </div>
 
