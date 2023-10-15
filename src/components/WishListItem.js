@@ -1,17 +1,34 @@
 import React from "react";
 import { RiDeleteBin2Line } from "react-icons/ri";
 import StarRating from './StarRating'; 
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
 import {removeWish} from '../redux/Slices/WishSlice';
+// import { addCart, removeCart} from '../redux/Slices/CartSliceForCard';
+// import { add, remove} from '../redux/Slices/CartSlice';
 import { toast } from "react-hot-toast";
+import {Link} from 'react-router-dom';
 
 const WishListItem = ({ item, itemIndex}) => {  
+  // const { cartCard } = useSelector((state) => state);
+
   const dispatch = useDispatch();
 
   const removeFromWishlist = () => {
     dispatch(removeWish(item.id));
     toast.error("Item Removed");
   };
+
+  // const addToCart = () => {
+  //   dispatch(addCart(item));
+  //   // dispatch(add(item));
+  //   toast.success("card added to Cart");
+  // }
+
+  // const removeFromCart = () => {
+  //   dispatch(removeCart(item.id));
+  //   // dispatch(remove(item.id));
+  //   toast.error("card removed from Cart");
+  // }
 
   return (
     <div>
@@ -64,6 +81,30 @@ const WishListItem = ({ item, itemIndex}) => {
               <RiDeleteBin2Line />
             </div> 
           </div>
+            <div>
+                <Link to="/Checkout">
+                <button className='bg-blue-700 border-2 border-blue-700 rounded-2xl font-semibold text-sm text-white w-[30%] px-4 mt-5 hover:bg-blue-800'>
+                  Pay Now</button>
+                </Link>
+
+                {/* {cartCard.some((p) => p.id === item.id) ? (
+                <button
+                  onClick={removeFromCart}
+                  className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase
+                  hover:bg-gray-700 hover:text-white
+                  transition duration-300 ease-in'>
+                  Remove Item
+                </button>
+              ) : (
+                <button
+                  onClick={addToCart}
+                  className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase
+                  hover.bg-gray-700 hover.text-white
+                  transition duration-300 ease-in'>
+                  Add to Cart
+                </button>
+              )} */}
+            </div>
         </div>
       </div>
     </div>

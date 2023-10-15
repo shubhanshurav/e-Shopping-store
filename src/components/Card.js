@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
-import { add, remove} from '../redux/Slices/CartSlice';
+import { addCart, removeCart} from '../redux/Slices/CartSliceForCard';
 import { addWish, removeWish} from '../redux/Slices/WishSlice';
 import { toast } from "react-hot-toast";
 import StarRating from './StarRating'; 
@@ -10,7 +10,7 @@ import {AiOutlineHeart} from 'react-icons/ai';
 
 const Card = ({ card }) => {
 
-  const { cart, wish } = useSelector((state) => state);
+  const { cartCard, wish } = useSelector((state) => state);
   const dispatch = useDispatch();
 
   const addToWishList = () => {
@@ -23,12 +23,12 @@ const Card = ({ card }) => {
     toast.error("Item removed from Wishlist");
   }
   const addToCart = () => {
-    dispatch(add(card));
+    dispatch(addCart(card));
     toast.success("card added to Cart");
   }
 
   const removeFromCart = () => {
-    dispatch(remove(card.id));
+    dispatch(removeCart(card.id));
     toast.error("card removed from Cart");
   }
 
@@ -83,7 +83,7 @@ const Card = ({ card }) => {
       <div className="flex justify-between mt-6">
       <Link to="/Shop/ViewDetails" className='text-red-600 font-semibold hover:text-black '>View Details</Link>
 
-        {cart.some((p) => p.id === card.id) ? (
+        {cartCard.some((p) => p.id === card.id) ? (
           <button
             onClick={removeFromCart}
             className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase

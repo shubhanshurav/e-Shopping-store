@@ -54,7 +54,7 @@ const Shop = () => {
           Make your orders we will deliver..
         </p>
       </div>
-
+ 
       <div className="mt-12">
         {
           loading ? <Spinner /> : 

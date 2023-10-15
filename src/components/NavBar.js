@@ -5,7 +5,7 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {RxCross1} from 'react-icons/rx';
 
 const NavBar = () => {
-  const { cart, wish } = useSelector((state) => state);
+  const { cart, wish,cartCard } = useSelector((state) => state);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -78,9 +78,9 @@ const NavBar = () => {
           </Link>
           <Link to="/Cart" className="text-white flex place-content-center w-7 relative">
             <img src='/assets/cart.svg' alt='CartLogo'/>
-            {cart.length > 0 &&
-              <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{cart.length}</span>
-            }
+            {(cart.length > 0 || cartCard.length > 0) && (
+              <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{cart.length + cartCard.length}</span>
+            )}
           </Link>
         </div>
       </div>

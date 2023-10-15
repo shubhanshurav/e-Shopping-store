@@ -1,6 +1,6 @@
 const shopData = [
   {
-    id: 1,
+    id: 31,
     company: "levis",
     image: "../assets/products/f1.jpg",
     price: "49.9",
@@ -9,7 +9,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 2,
+    id: 32,
     company: "nike",
     image: "../assets/products/f2.jpg",
     price: "42.9",
@@ -18,7 +18,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 3,
+    id: 33,
     company: "addidas",
     image: "../assets/products/f3.jpg",
     price: "44.9",
@@ -27,7 +27,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 4,
+    id: 34,
     company: "nike",
     image: "../assets/products/f4.jpg",
     price: "49.9",
@@ -36,7 +36,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 5,
+    id: 35,
     company: "addidas",
     image: "../assets/products/f5.jpg",
     price: "49.9",
@@ -45,7 +45,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 6,
+    id: 36,
     company: "nike",
     image: "../assets/products/f6.jpg",
     price: "49.9",
@@ -54,7 +54,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 7,
+    id: 37,
     company: "levis",
     image: "../assets/products/f7.jpg",
     price: "49.9",
@@ -63,7 +63,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 8,
+    id: 38,
     company: "nike",
     image: "../assets/products/f8.jpg",
     price: "49.9",
@@ -72,7 +72,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 9,
+    id: 39,
     company: "levis",
     image: "../assets/products/img-4.png",
     price: "49.9",
@@ -81,7 +81,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 10,
+    id: 40,
     company: "addidas",
     image: "../assets/products/img1.png",
     price: "49.9",
@@ -90,7 +90,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 11,
+    id: 41,
     company: "nike",
     image: "../assets/products/n6.jpg",
     price: "49.9",
@@ -99,7 +99,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 12,
+    id: 42,
     company: "levis",
     image: "../assets/products/img3.png",
     price: "49.9",
@@ -109,7 +109,7 @@ const shopData = [
   },
 
   {
-    id: 13,
+    id: 43,
     company: "nike",
     image: "../assets/products/img4.png",
     price: "49.9",
@@ -118,7 +118,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 14,
+    id: 44,
     company: "addidas",
     image: "../assets/products/img5.png",
     price: "49.9",
@@ -127,7 +127,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 15,
+    id: 45,
     company: "nike",
     image: "../assets/products/img6.png",
     price: "49.9",
@@ -136,7 +136,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 17,
+    id: 47,
     company: "levis",
     image: "../assets/products/n7.jpg",
     price: "49.9",
@@ -145,7 +145,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 18,
+    id: 48,
     company: "addidas",
     image: "../assets/products/n8.jpg",
     price: "49.9",
@@ -154,7 +154,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 19,
+    id: 49,
     company: "levis",
     image: "../assets/products/n2.jpg",
     price: "49.9",
@@ -163,7 +163,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 20,
+    id: 50,
     company: "nike",
     image: "../assets/products/n1.jpg",
     price: "49.9",
@@ -172,7 +172,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 21,
+    id: 51,
     company: "levis",
     image: "../assets/products/n2.jpg",
     price: "49.9",
@@ -181,7 +181,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 22,
+    id: 52,
     company: "levis",
     image: "../assets/products/n3.jpg",
     price: "49.9",
@@ -190,7 +190,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 23,
+    id: 53,
     company: "levis",
     image: "../assets/products/n4.jpg",
     price: "49.9",
@@ -199,7 +199,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 24,
+    id: 54,
     company: "nike",
     image: "../assets/products/n4.jpg",
     price: "49.9",
@@ -208,7 +208,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 25,
+    id: 55,
     company: "levis",
     image: "../assets/products/n5.jpg",
     price: "49.9",
@@ -217,7 +217,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 25,
+    id: 55,
     company: "addidas",
     image: "../assets/products/img5.png",
     price: "49.9",
@@ -226,7 +226,7 @@ const shopData = [
     stock:95,
   },
   {
-    id: 26,
+    id: 56,
     company: "levis",
     image: "../assets/products/img6.png",
     price: "49.9",
