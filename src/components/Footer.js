@@ -70,7 +70,7 @@ const Footer = () => {
             <h1 className="text-lg font-bold">Account</h1>
           </div>
           <div className="flex flex-wrap flex-col pt-4 text-gray-700">
-            <a href="/About" className="mb-7 hover:text-blue-800">
+            <a href="/Login" className="mb-7 hover:text-blue-800">
               Profile
             </a>
             <a href="/" className="mb-7 hover:text-blue-800">
@@ -79,10 +79,10 @@ const Footer = () => {
             <a href="/" className="mb-7 hover:text-blue-800">
               Help
             </a>
-            <a href="/" className="mb-7 hover:text-blue-800">
+            <a href="/Checkout" className="mb-7 hover:text-blue-800">
               Payments
             </a>
-            <a href="/" className="mb-7 hover:text-blue-800">
+            <a href="/Wishlist" className="mb-7 hover:text-blue-800">
               My Wishlist
             </a>
             <a href="/" className="mb-7 hover:text-blue-800">
@@ -113,7 +113,7 @@ const Footer = () => {
               />
             </a>
             <p>Payment Methods</p>
-            <a href="/">
+            <a href="/Checkout">
               <img
                 src="/assets/pay/pay.png"
                 alt="AppStoreLogo"

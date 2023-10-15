@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import CartItem from './CartItem';
 
-const Cart = () => {
+const Cart = () => { 
 
   const {cart} = useSelector((state) => state);
   const [totalAmount, setTotalAmount] = useState(0);
@@ -44,15 +44,15 @@ const Cart = () => {
               </div>
            </div>
          </div>):
-         (<div className='text-center mt-44 h-[60vh]'> 
-             <h1 className='font-semibold text-4xl'>Cart Empty</h1>
-             <Link to="/Shop">
-                 <button 
-                 className='bg-blue-700 border-2 border-blue-700 rounded-2xl font-semibold text-sm text-white w-[10%] p-2 mt-5 hover:bg-blue-800'>
-                  Shop Now
-                 </button>
-             </Link>
-          </div>)
+         (<div className='text-center items-center my-52'> 
+          <h1 className='font-semibold text-3xl font-chakra-petch m-7'>Wishlist Empty</h1>
+          <Link to="/Shop">
+              <button 
+              className='bg-blue-700 border-2 border-blue-700 rounded-lg text-md text-white py-2 px-2 font-chakra-petch font-extralight hover:bg-blue-800'>
+                Shop Now
+              </button>
+          </Link>
+        </div>)
       }
     </div>
   )

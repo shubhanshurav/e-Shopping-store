@@ -2,14 +2,26 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { add, remove} from '../redux/Slices/CartSlice';
+import { addWish, removeWish} from '../redux/Slices/WishSlice';
 import { toast } from "react-hot-toast";
 import StarRating from './StarRating'; 
+import {AiTwotoneHeart} from 'react-icons/ai';
+import {AiOutlineHeart} from 'react-icons/ai';
 
 const Card = ({ card }) => {
 
-  const { cart } = useSelector((state) => state);
+  const { cart, wish } = useSelector((state) => state);
   const dispatch = useDispatch();
 
+  const addToWishList = () => {
+    dispatch(addWish(card));
+    toast.success("Item added to Wishlist");
+  }
+
+  const removeFromWishList = () => {
+    dispatch(removeWish(card.id));
+    toast.error("Item removed from Wishlist");
+  }
   const addToCart = () => {
     dispatch(add(card));
     toast.success("card added to Cart");
@@ -22,7 +34,26 @@ const Card = ({ card }) => {
 
   return (
     <div className="border-inherit border rounded-xl py-2 px-3 m-auto">
-      <img src={card.image} className="w-full rounded-xl" alt="" />
+
+      <div className="text-xl">
+      {wish.some((p) => p.id == card.id) ? (
+            <button
+              onClick={removeFromWishList}
+              className='text-gray-700 rounded-full font-semibold text-[12px] p-1 px-1 uppercase
+              transition duration-300 ease-in'>
+                <AiTwotoneHeart className='text-2xl text-red-700' />
+            </button>
+          ) : (
+            <button
+            onClick={addToWishList}
+            className='text-gray-700 rounded-full font-semibold text-[12px] p-1 px-1 uppercase
+              transition duration-300 ease-in'>
+                <AiOutlineHeart className='text-2xl text-red-700' />
+            </button>
+          )}
+      </div>
+       <img src={card.image} className="w-full rounded-xl" alt="" />
+      
 
       <h1 className="text-gray-700 font-normal text-md text-left mt-1 uppercase">
             {card.company}
@@ -52,7 +83,7 @@ const Card = ({ card }) => {
       <div className="flex justify-between mt-6">
       <Link to="/Shop/ViewDetails" className='text-red-600 font-semibold hover:text-black '>View Details</Link>
 
-        {cart.some((crd) => crd.id === card.id) ? (
+        {cart.some((p) => p.id === card.id) ? (
           <button
             onClick={removeFromCart}
             className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase

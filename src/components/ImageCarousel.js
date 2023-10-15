@@ -18,6 +18,7 @@ const ImageCarousel = ({ post }) => {
     );
   };
 
+
   return (
     <div>
       <div className="h-[180px]">

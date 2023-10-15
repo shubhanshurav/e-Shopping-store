@@ -126,40 +126,38 @@ const FeatureProducts = () => {
             </div>
          </div>
 
-         <div className='grid lg:grid-cols-2 sm:grid-cols-2 place-content-center m-auto p-14'>
+         <div className='grid lg:grid-cols-2 sm:grid-flow-row place-content-center m-auto p-14 gap-3'>
             {/* card1 */}
-           <div className='grid lg:grid-cols-2 sm:grid-flow-row border-2 border-gray-300 m-2 p-3 rounded-2xl'>
-             <div className=''>
-               <img src='/assets/banner/b17.jpg' className='w-64 rounded-2xl p-2'/>
+           <div className='grid lg:grid-cols-2 border-2 border-gray-300 m-auto p-5 rounded-lg text-start'>
+             <div className='w-full h-full'>
+               <img src='/assets/banner/b17.jpg' className=' rounded-xl'/>
              </div>
-             <div className='p-4 text-md'>
+             <div className='sm:pt-2 lg:p-2 text-[14px] font-chakra-petch ml-2'>
                <h1>Hot Deals</h1>
                <p>Buy One get One free.</p>
                <p>The latest best collection in our closet</p>
                <p>Feel Cute with our outfits</p>
-               <Link to='/'>
-                  <button className="bg-orange-600 px-3 py-1 text-sm border-solid border-2 border-black rounded-2xl hover:bg-slate-200 hover:text-black place-content-center">
-                  Explore Now
-                  </button>
-               </Link>
+               <button 
+               className='bg-blue-700 border-2 border-blue-700 rounded-lg text-md text-white py-1 px-2 mt-2 font-chakra-petch font-extralight hover:bg-blue-800'>
+               Shop Now
+              </button>
              </div>
            </div>
 
           {/* card2 */}
-           <div className='grid lg:grid-cols-2 border-2 border-gray-300 m-2 p-3 rounded-2xl'>
-             <div className=''>
-                <img src='/assets/banner/b10.jpg' className='w-64 rounded-2xl p-2'/>
+           <div className='grid lg:grid-cols-2 border-2 border-gray-300 m-auto p-5 rounded-lg text-start'>
+             <div className='w-full h-full'>
+                <img src='/assets/banner/b10.jpg' className='rounded-xl'/>
              </div>
-             <div className='p-4 text-md '>
+             <div className='lg:p-2 sm:pt-2 text-[14px] font-chakra-petch ml-2'>
                <p>Season-In</p>
                <p>All Weather Attire</p>
                <p>It never matter which season it is</p>
                <p>We got you covered</p>
-               <Link to='/'>
-                  <button className="bg-orange-600 px-3 py-1 text-sm border-solid border-2 border-black rounded-2xl hover:bg-slate-200 hover:text-black place-content-center">
-                  Explore Now
-                  </button>
-               </Link>
+               <button 
+                  className='bg-blue-700 border-2 border-blue-700 rounded-lg text-md text-white py-1 px-2 mt-2 font-chakra-petch font-extralight hover:bg-blue-800'>
+                  Shop Now
+              </button>
              </div>
 
            </div>
