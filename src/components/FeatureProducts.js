@@ -129,7 +129,7 @@ const FeatureProducts = () => {
          <div className='grid lg:grid-cols-2 sm:grid-flow-row place-content-center m-auto p-14 gap-3'>
             {/* card1 */}
            <div className='grid lg:grid-cols-2 border-2 border-gray-300 m-auto p-5 rounded-lg text-start'>
-             <div className='w-full h-full'>
+             <div className=''>
                <img src='/assets/banner/b17.jpg' className=' rounded-xl'/>
              </div>
              <div className='sm:pt-2 lg:p-2 text-[14px] font-chakra-petch ml-2'>
@@ -146,7 +146,7 @@ const FeatureProducts = () => {
 
           {/* card2 */}
            <div className='grid lg:grid-cols-2 border-2 border-gray-300 m-auto p-5 rounded-lg text-start'>
-             <div className='w-full h-full'>
+             <div className=''>
                 <img src='/assets/banner/b10.jpg' className='rounded-xl'/>
              </div>
              <div className='lg:p-2 sm:pt-2 text-[14px] font-chakra-petch ml-2'>
