@@ -76,10 +76,12 @@ const HomePage = () => {
           <p className="sm:text-xl md:text-1xl lg:text:2xl text-black pb-5 sm:pb-4">
             Save more today with Apna Fasion Store
           </p>
-          <button 
-          className='bg-blue-700 border-2 border-blue-700 rounded-lg text-md text-white py-2 px-2 font-chakra-petch font-extralight hover:bg-blue-800'>
-                Shop Now
-          </button>
+          <Link to="/Shop">
+            <button 
+            className='bg-blue-700 border-2 border-blue-700 rounded-lg text-md text-white py-2 px-2 font-chakra-petch font-extralight hover:bg-blue-800'>
+                  Shop Now
+            </button>
+          </Link>
         </div>
       </div>
       

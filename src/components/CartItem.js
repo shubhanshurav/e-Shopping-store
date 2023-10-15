@@ -2,7 +2,8 @@ import React from "react";
 import { toast } from "react-hot-toast";
 import { RiDeleteBin2Line } from "react-icons/ri";
 import { useDispatch } from "react-redux";
-import { remove } from "../redux/Slices/CartSlice";
+import { remove} from "../redux/Slices/CartSlice";
+import { removeCart } from "../redux/Slices/CartSliceForCard";
 import StarRating from './StarRating'; 
 // import ImageCarousel from "./ImageCarousel";
 
@@ -11,6 +12,7 @@ const CartItem = ({ item, itemIndex}) => {
 
   const removeFromCart = () => {
     dispatch(remove(item.id));
+    dispatch(removeCart(item.id));
     toast.error("Item Removed");
   };
   
