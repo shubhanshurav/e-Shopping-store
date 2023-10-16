@@ -10,7 +10,7 @@ const Creators = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-[70%] m-auto gap-10">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-[50%] m-auto gap-10">
           <div className="border-2 border-gray-300 p-3 rounded-xl m-auto bg-slate-100  px-10 py-10">
             <img
               src="/assets/Saketimg.jpeg"
