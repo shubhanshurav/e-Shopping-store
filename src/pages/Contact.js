@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="font-chakra-petch">
       <div
         className="bg-cover bg-no-repeat bg-center h-64 md:h-96 lg:h-120 scroll-smooth "
         style={{ backgroundImage: `url('/assets/banner/b2.jpg')` }}

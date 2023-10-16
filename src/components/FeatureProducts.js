@@ -65,11 +65,12 @@ const FeatureProducts = () => {
          <h1 className="text-white text-center pt-5 text-xl">Repair Services</h1>
          <h1 className="text-white text-center p-3 text-2xl">On 70% Off on All Products And Accessories</h1>
          <div className='text-center'>
-            <Link to='/'>
-               <button className="bg-orange-600 px-6 py-2 border-solid border-4 border-amber-400 rounded-2xl hover:bg-slate-200 hover:text-black hover:border-amber-600 place-content-center">
-               Explore Now
-               </button>
-            </Link>
+          <Link to="/Shop">
+            <button 
+            className='bg-blue-700 border-2 border-blue-700 rounded-md text-md text-white py-1 px-2 font-chakra-petch font-extralight hover:bg-blue-800'>
+                  Shop Now
+            </button>
+          </Link>
          </div>
       </div>
 

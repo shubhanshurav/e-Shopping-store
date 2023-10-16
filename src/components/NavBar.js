@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-blue-900 sticky top-0 ">
+    <nav className="bg-blue-900 sticky top-0">
       <div className="m-auto flex lg:flex-row ">
         
         {/* Hamburger Menu */}
@@ -39,10 +39,10 @@ const NavBar = () => {
               <input
                 type="text"
                 placeholder="Find Product here..."
-                className="w-44 p-2 h-13 rounded-l-md border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
+                className="w-44 p-2 h-10 font-chakra-petch rounded-l-md border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
               />
-              <button className='p-2 w-14 h-13 rounded-r-md bg-transparent hover:text-stone-100 hover:bg-amber-500 text-white border-y-2 border-r-2'>
-                <img src='/assets/icons/SearchIcon.png' className='h-8 w-8 '/>
+              <button className='p-2 w-10 h-10 rounded-r-md bg-transparent hover:text-stone-100 hover:bg-gray-900 text-white border-y-2 border-r-2'>
+                <img src='/assets/icons/SearchIcon.png' className='h-6 w-6 '/>
               </button>
           </div>
 
@@ -50,16 +50,16 @@ const NavBar = () => {
           <div className='m-auto'>
             <ul className={`lg:flex lg:flex-row lg:w-auto text-white lg:space-x-8 sm:space-x-0 p-4 text-center ${isMenuOpen ? 'block' : 'hidden'}`}>
               <li className='p-2'>
-                <Link to="/" className="hover:border-b-2 hover:border-stone-300 hover:text-stone-300" onClick={toggleMenu}>Home</Link>
+                <Link to="/" className="hover:border-b-2 hover:border-stone-300 hover:text-stone-300 font-chakra-petch font-lg" onClick={toggleMenu}>Home</Link>
               </li>
               <li className='p-2'>
-                <Link to="/Shop" className="hover:border-b-2 hover:border-stone-300 hover:text-stone-300" onClick={toggleMenu}>Shop</Link>
+                <Link to="/Shop" className="hover:border-b-2 hover:border-stone-300 hover:text-stone-300 font-chakra-petch font-lg" onClick={toggleMenu}>Shop</Link>
               </li>
               <li className='p-2'>
-                <Link to="/About" className="hover:border-b-2 hover:border-stone-300 hover:text-stone-300" onClick={toggleMenu}>About</Link>
+                <Link to="/About" className="hover:border-b-2 hover:border-stone-300 hover:text-stone-300 font-chakra-petch font-lg" onClick={toggleMenu}>About</Link>
               </li>
               <li className='p-2'>
-                <Link to="/Contact" className="hover:border-b-2 hover:border-stone-300 hover:text-stone-300" onClick={toggleMenu}>Contact</Link>
+                <Link to="/Contact" className="hover:border-b-2 hover:border-stone-300 hover:text-stone-300 font-chakra-petch font-lg" onClick={toggleMenu}>Contact</Link>
               </li>
             </ul>
           </div>

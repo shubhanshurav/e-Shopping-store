@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import {  useNavigate, useParams } from 'react-router-dom'
 
 import shopData from '../Data';
+import StarRating from './StarRating';
 
 const ViewDetails = () => {
 
@@ -31,6 +32,8 @@ const ViewDetails = () => {
              <p className='text-[15px] font-thin border-2 w-[100px] flex justify-center py-1'>1.3k Rating</p> 
              <hr className='m-1 w-[100vh]'/>
              <p className='text-[20px] font-semibold opacity-70 py-4 -z-10'>${clickedData[0].price} MRP <s >$99</s> <span className='text-orange-600 '>(55% OFF)</span>  </p> 
+             <p className='text-[20px] font-semibold opacity-70 py-4 -z-10'>Stock: <b className='text-blue-700'>{clickedData[0].stock}</b> </p> 
+             <p className='flex text-[20px] font-semibold opacity-70 py-4 -z-10'> Ratings: <StarRating rating = {clickedData[0].rating} /></p> 
             
       <div className=' cursor-pointer  '>  
             <p className='text-[20px] font-semibold '>MORE COLORS</p>

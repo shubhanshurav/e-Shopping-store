@@ -83,8 +83,8 @@ const WishListItem = ({ item, itemIndex}) => {
           </div>
             <div>
                 <Link to="/Checkout">
-                <button className='bg-blue-700 border-2 border-blue-700 rounded-2xl font-semibold text-sm text-white w-[30%] px-4 mt-5 hover:bg-blue-800'>
-                  Pay Now</button>
+                <button className='bg-blue-700 border-2 border-blue-700 rounded-lg font-chakra-petch font-semibold text-sm text-white w-[60%] px-4 py-2 mt-5 hover:bg-blue-800'>
+                  Proceed To Checkout</button>
                 </Link>
 
                 {/* {cartCard.some((p) => p.id === item.id) ? (

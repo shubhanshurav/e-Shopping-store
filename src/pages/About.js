@@ -7,7 +7,7 @@ const About = ({datacustomer}) => {
 
   return (
 
-    <div className='w-[100%]'>
+    <div className='w-[100%] font-chakra-petch'>
 
    <div className=' relative flex flex-col items-center m-10 -z-10'>
        <img src="./assets/about/banner.png"  loading='lazy' className='h-[300px] w-[100vw] rounded-md' alt="banner" />

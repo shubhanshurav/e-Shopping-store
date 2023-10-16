@@ -1,8 +1,12 @@
 import React from "react";
+import {ImLinkedin} from 'react-icons/im';
+import {FaTwitter} from 'react-icons/fa';
+import {GrInstagram} from 'react-icons/gr';
+import {BsGithub, BsFacebook} from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <div className=" bg-gray-100 ">
+    <div className=" bg-gray-100 font-chakra-petch">
 
       <div className="grid lg:grid-cols-4 mg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 border-b-2 border-t-2 border-gray-300 m-5">
         {/* contact  */}
@@ -17,7 +21,7 @@ const Footer = () => {
             </p>
             <p className="mb-6">
               <span className="font-bold">Phone:</span>{" "}
-              <a href="tel:+91987654321" className="text-orange-400 font-bold">
+              <a href="tel:+91987654321" className="text-blue-600 font-md text-md">
                 Call us at +91987654321
               </a>
             </p>
@@ -25,7 +29,7 @@ const Footer = () => {
               <span className="font-bold">Email:</span>{" "}
               <a
                 href="mailto:abc123@gmail.com"
-                className="text-blue-400 font-bold"
+                className="text-blue-600 font-light text-md"
               >
                 {" "}
                 Email us at abc123@gmail.com
@@ -35,7 +39,27 @@ const Footer = () => {
               <span className="font-bold">Hours:</span> From 10 AM To 8 PM
             </p>
             <div className="mb-6">
-              <p className="font-bold">Follow the developer</p>
+              <p className="font-bold">Follow the developer : </p>
+              <div className="flex gap-4 py-5 text-2xl cursor-pointer">
+                <a href="/">
+                  <ImLinkedin className="text-blue-700"/>
+                </a>
+
+                <a href="/">
+                  <BsGithub className="text-black" />
+                </a>
+
+                <a href="/Shop">
+                  <BsFacebook className="text-blue-700" />
+                </a>
+
+                <a href="/">
+                  <FaTwitter className="text-blue-700" />
+                </a>
+                <a href="/">
+                  <GrInstagram className="text-white bg-red-700 p-1 rounded-lg" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -73,10 +97,10 @@ const Footer = () => {
             <a href="/Login" className="mb-7 hover:text-blue-800">
               Profile
             </a>
-            <a href="/" className="mb-7 hover:text-blue-800">
+            <a href="/Cart" className="mb-7 hover:text-blue-800">
               View Cart
             </a>
-            <a href="/" className="mb-7 hover:text-blue-800">
+            <a href="/About" className="mb-7 hover:text-blue-800">
               Help
             </a>
             <a href="/Checkout" className="mb-7 hover:text-blue-800">
