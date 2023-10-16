@@ -102,14 +102,14 @@ const Footer = () => {
               <img
                 src="/assets/pay/play.jpg"
                 alt="PlayStoreLogo"
-                className="w-56 border-2 border-green-600 rounded-2xl mb-3 mt-3 hover:-translate-y-1.5"
+                className="w-56 border-2 border-green-600 rounded-2xl mb-3 mt-3 hover:-translate-y-1.5 transition-all  "
               />
             </a>
             <a href="/">
               <img
                 src="/assets/pay/app.jpg"
                 alt="AppStoreLogo"
-                className="w-56 border-2 border-green-600 rounded-2xl mb-3 hover:-translate-y-1.5"
+                className="w-56 border-2 border-green-600 rounded-2xl mb-3 hover:-translate-y-1.5 transition-all "
               />
             </a>
             <p>Payment Methods</p>
@@ -117,7 +117,7 @@ const Footer = () => {
               <img
                 src="/assets/pay/pay.png"
                 alt="AppStoreLogo"
-                className="w-64 border-2 border-green-600 rounded-2xl mt-3 p-4 hover:-translate-y-1.5"
+                className="w-64 border-2 border-green-600 rounded-2xl mt-3 p-4 hover:-translate-y-1.5 transition-all "
               />
             </a>
           </div>
