@@ -2,6 +2,7 @@
 import React from "react";
 import FeatureProducts from "../components/FeatureProducts";
 import { Link } from "react-router-dom";
+import Creators from "./Creators";
 // import React, { useEffect, useState } from "react";
 // import Spinner from '../components/Spinner';
 // import Product from '../components/Product';
@@ -32,6 +33,7 @@ const HomePage = () => {
   // useEffect( () => {
   //   fetchProductData();
   // },[])
+
 
   return (
     
@@ -74,9 +76,12 @@ const HomePage = () => {
           <p className="sm:text-xl md:text-1xl lg:text:2xl text-black pb-5 sm:pb-4">
             Save more today with Apna Fasion Store
           </p>
-          <button className="bg-orange-700 px-4 text-sm md:text-lg lg:text-xl py-2 border-solid border-2 border-orange-600 rounded-xl hover:bg-slate-200 hover:text-black">
-            <Link to="/Shop">Shop Now</Link>
-          </button>
+          <Link to="/Shop">
+            <button 
+            className='bg-blue-700 border-2 border-blue-700 rounded-lg text-md text-white py-2 px-2 font-chakra-petch font-extralight hover:bg-blue-800'>
+                  Shop Now
+            </button>
+          </Link>
         </div>
       </div>
       
@@ -156,6 +161,12 @@ const HomePage = () => {
             </div>
         </div>
       </div>
+
+       {/* Creators */}
+      <div>
+         <Creators />
+      </div>
+      
     </div>
   );
 }

@@ -1,14 +1,11 @@
-
-
+import React from 'react';
 import CardCustomer from '../components/CardCustomer';
+import Creators from './Creators';
 
 
 const About = ({datacustomer}) => {
 
-
   return (
-
-
 
     <div className='w-[100%]'>
 
@@ -80,6 +77,11 @@ const About = ({datacustomer}) => {
  </div>
 
 </div>
+
+{/* Creators */}
+      <div>
+         <Creators />
+      </div>
            
 </div> 
   )

@@ -1,6 +1,6 @@
 const shopData = [{
         id: 1,
-        company: "levis",
+        company: "Levis",
         image: "/assets/products/f1.jpg",
         price: "49.9",
         Heading: "Men's Dri-FIT T-Shirt",
@@ -79,73 +79,92 @@ const shopData = [{
         image: "/assets/products/img4.png",
         price: "49.9",
         Heading: "Men's 1950s Sportswear",
-    }, {
+    },
+    {
         id: 14,
         company: "addidas",
-        image: "/assets/products/img5.png",
+        image: "../assets/products/img5.png",
         price: "49.9",
         Heading: "Men's Dri-FIT T-Shirt",
-    }, {
+    },
+    {
         id: 15,
         company: "nike",
         image: "/assets/products/img6.png",
         price: "49.9",
         Heading: "Women's Badge of Sport Tee",
-    }, {
+    },
+    {
         id: 17,
         company: "levis",
         image: "/assets/products/n7.jpg",
         price: "49.9",
         Heading: "Women's Badge of Sport Tee",
-    }, {
+    },
+    {
         id: 18,
         company: "addidas",
         image: "/assets/products/n8.jpg",
         price: "49.9",
         Heading: "Men's Cotton Classic Short Sleeve Crew Neck T-Shirt",
-    }, {
+    },
+    {
         id: 19,
         company: "levis",
         image: "/assets/products/n2.jpg",
         price: "49.9",
         Heading: "Women's Basic Tee, Men's Rebel Bold Tee",
-    }, {
+    },
+    {
         id: 20,
         company: "nike",
         image: "/assets/products/n1.jpg",
         price: "49.9",
         Heading: "Men's 1950s Sportswear",
-    }, {
+    },
+    {
         id: 21,
         company: "levis",
         image: "/assets/products/n2.jpg",
         price: "49.9",
         Heading: "Women's Badge of Sport Tee",
-    }, {
+    },
+    {
         id: 22,
         company: "levis",
         image: "/assets/products/n3.jpg",
         price: "49.9",
         Heading: "Slim Fit Dress Shirt",
-    }, {
+    },
+    {
         id: 23,
         company: "levis",
         image: "/assets/products/n4.jpg",
         price: "49.9",
         Heading: "Women's Basic Tee, Men's Rebel Bold Tee",
-    }, {
+    },
+    {
         id: 24,
         company: "nike",
         image: "/assets/products/n4.jpg",
         price: "49.9",
         Heading: "Slim Fit Dress Shirt",
-    }, {
+    },
+    {
         id: 25,
         company: "levis",
         image: "/assets/products/n5.jpg",
         price: "49.9",
         Heading: "Slim Fit Dress Shirt",
-    }, {
+    },
+    {
+        id: 25,
+        company: "addidas",
+        image: "/assets/products/img5.png",
+        price: "49.9",
+        Heading: "Women's Basic Tee, Men's Rebel Bold Tee",
+    },
+    {
         id: 26,
         company: "levis",
         image: "/assets/products/img6.png",

@@ -5,7 +5,7 @@ import {GiHamburgerMenu} from 'react-icons/gi';
 import {RxCross1} from 'react-icons/rx';
 
 const NavBar = () => {
-  const { cart } = useSelector((state) => state);
+  const { cart, wish,cartCard } = useSelector((state) => state);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-blue-900 sticky top-0">
+    <nav className="bg-blue-900 sticky top-0 ">
       <div className="m-auto flex lg:flex-row ">
         
         {/* Hamburger Menu */}
@@ -34,15 +34,15 @@ const NavBar = () => {
        </div>
 
         {/* Search */}
-        <div className={`lg:flex lg:flex-row lg:w-auto lg:items-center p-5 ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className={`lg:flex lg:flex-row lg:w-auto lg:items-center p-5 m-auto ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className='flex flex-row mr-8'>
               <input
                 type="text"
                 placeholder="Find Product here..."
-                className="w-44 py-1 px-1 rounded-l-md border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
+                className="w-44 p-2 h-13 rounded-l-md border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
               />
-              <button className='w-20 py-1 px-1 rounded-r-md bg-transparent hover:text-stone-100 hover:bg-amber-500 text-white border-y-2 border-r-2'>
-                Search
+              <button className='p-2 w-14 h-13 rounded-r-md bg-transparent hover:text-stone-100 hover:bg-amber-500 text-white border-y-2 border-r-2'>
+                <img src='/assets/icons/SearchIcon.png' className='h-8 w-8 '/>
               </button>
           </div>
 
@@ -70,14 +70,17 @@ const NavBar = () => {
           <Link to="/Login" className="text-white w-7">
             <img src='/assets/user.svg' alt='UserLogo'/>
           </Link>
-          <Link to="/Cart" className="text-white flex place-content-center w-7">
+          <Link to="/Wishlist" className="text-white flex place-content-center w-7 relative">
             <img src='/assets/wishlist.svg' alt='wishlist'/>
+            {wish.length > 0 &&
+              <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{wish.length}</span>
+            }
           </Link>
           <Link to="/Cart" className="text-white flex place-content-center w-7 relative">
             <img src='/assets/cart.svg' alt='CartLogo'/>
-            {cart.length > 0 &&
-              <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{cart.length}</span>
-            }
+            {(cart.length > 0 || cartCard.length > 0) && (
+              <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{cart.length + cartCard.length}</span>
+            )}
           </Link>
         </div>
       </div>

@@ -16,10 +16,11 @@ import ViewDetails from './ViewDetails';
 import ForgetPassword from './ForgetPassword';
 import Signup from './Signup';
 import Checkout from './Checkout';
+import WishList from './WishList';
 
 const RoutesConfig = () => {
 
-const [datacustomer, setDatacutomer] = useState(data);
+const [datacustomer, setDatacustomer] = useState(data);
 const [shopdata , setShopData] = useState(shopData);
 
   return (
@@ -33,6 +34,7 @@ const [shopdata , setShopData] = useState(shopData);
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Cart" element={<Cart />} />
+        <Route path="/WishList" element={<WishList />} />
         <Route path="/ForgetPassword" element={<ForgetPassword/>}/>
         <Route path="/Signup" element={<Signup/>}/>
         <Route path="/Checkout" element={<Checkout />} />
