@@ -1,4 +1,5 @@
 import React from 'react';
+import {MdVerified} from 'react-icons/md';
 
 const Creators = () => {
   return (
@@ -17,9 +18,10 @@ const Creators = () => {
               alt="deve"
               className="object-cover rounded-full border-4 border-blue-700 Creators p-1"
             />
-            <p className="flex justify-center text-[23px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3">
-              Saket Singh
+            <p className="flex justify-center items-center text-[23px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3">
+            <MdVerified className='text-blue-700 ' /> <span className='pl-1'>Saket Singh </span> 
             </p>
+            <p className='text-center text-gray-800 font-light text-[15px]'>MERN Developer</p>
             <div className="flex justify-center gap-6 m-2 items-center">
               <a href="https://www.linkedin.com/in/saket-singh-810824240">
                 <img
@@ -43,9 +45,10 @@ const Creators = () => {
               alt="deve"
               className="object-cover rounded-full border-4 border-blue-700 Creators p-1"
             />
-            <p className="flex justify-center text-[23px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3" >
-              Shubhanshu Rao{" "}
+            <p className="flex justify-center items-center text-[23px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3" >
+              <MdVerified className='text-blue-700 ' /> <span className='pl-1'>Shubhanshu Rao{" "} </span> 
             </p>
+            <p className='text-center text-gray-800 font-light text-[15px]'>MERN Developer</p>
             <div className="flex justify-center gap-6 m-2 items-center">
               <a href="https://www.linkedin.com/in/shubhanshu-rao-052320208/">
                 <img
