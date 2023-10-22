@@ -12,11 +12,11 @@ const Creators = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-[50%] m-auto gap-10">
-          <div className="border-2 border-gray-300 p-3 rounded-xl m-auto bg-slate-100  px-10 py-10">
+          <div className="border-2 border-gray-300 rounded-xl m-auto bg-slate-100 px-6 py-6">
             <img
               src="/assets/Saketimg.jpeg"
               alt="deve"
-              className="object-cover rounded-full border-4 border-blue-700 Creators p-1"
+              className="object-cover rounded-full border-4 border-blue-700 Creators p-[2px]"
             />
             <p className="flex justify-center items-center text-[23px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3">
             <MdVerified className='text-blue-700 ' /> <span className='pl-1'>Saket Singh </span> 
@@ -39,7 +39,7 @@ const Creators = () => {
               </a>
             </div>
           </div>
-          <div className="border-2 border-gray-300 p-3 rounded-xl m-auto bg-slate-100 px-6 py-6">
+          <div className="border-2 border-gray-300 rounded-xl m-auto bg-slate-100 px-6 py-6">
             <img
               src="/assets/shubhanshuimg.jpg"
               alt="deve"

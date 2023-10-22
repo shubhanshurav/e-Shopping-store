@@ -4,6 +4,7 @@ import shopData from '../Data';
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa";
 import Spinner from '../components/Spinner';
 import Product from '../components/Product';
+import ErrorPage from "../components/ErrorPage";
 
 const Shop=() => {
 
@@ -15,20 +16,20 @@ const Shop=() => {
 
 
   async function fetchProductData() {
-  setLoading(true);
+     setLoading(true);
 
-  try {
-    const res = await fetch(API_URL);
-    const data = await res.json();
+      try {
+        const res = await fetch(API_URL);
+        const data = await res.json();
 
-    setPosts(data.products);
-  } catch (error) {
-    console.error("There is something wrong, please try again!!");
-    setPosts([]);
+        setPosts(data.products);
+      } catch (error) {
+        console.error("There is something wrong, please try again!!");
+        setPosts([]);
+      }
+
+      setLoading(false);
   }
-
-  setLoading(false);
-}
 
   useEffect( () => {
     fetchProductData();
@@ -68,7 +69,7 @@ const Shop=() => {
               }
             </div> ) :
             <div className="flex justify-center items-center">
-              <p>No Data Found</p>
+              <ErrorPage />
             </div>
         }
       </div>
@@ -85,7 +86,7 @@ const Shop=() => {
               }
             </div> ) :
             <div className="flex justify-center items-center">
-              <p>No Data Found</p>
+               <ErrorPage />
             </div>
         }
       </div>

@@ -162,6 +162,29 @@ const HomePage = () => {
         </div>
       </div>
 
+    <div class="bg-black py-10">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="pb-6">
+            <h2 className="text-center text-blue-700 lg:text-5xl sm:text-2xl font-bold pb-4">Trusted by users Worldwide</h2>
+            <p className="text-center text-gray-300 text-sm font-light">Lorem ipsum dolor sit amet consect adipisicing possimus.</p>
+          </div>
+        <dl class="grid grid-cols-1 gap-x-2 gap-y-10 text-center font-sans lg:grid-cols-3">
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4 border-r-2 border-blue-800 m-12">
+            <dt class="text-base leading-7 text-gray-400 px-12">Transactions every 24 hours</dt>
+            <dd class="order-first text-2xl font-semibold text-white sm:text-5xl px-12">4000+</dd>
+          </div>
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4 border-r-2 border-blue-800 m-12">
+            <dt class="text-base leading-7 text-gray-400 px-12">Assets under holding</dt>
+            <dd class="order-first text-2xl font-semibold text-white sm:text-5xl px-12">$2000+</dd>
+          </div>
+          <div class="mx-auto flex max-w-xs flex-col gap-y-4 m-12">
+            <dt class="text-base leading-7 text-gray-400 px-12" >New users annually</dt>
+            <dd class="order-first text-2xl font-semibold text-white sm:text-5xl px-12">10,000+</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
        {/* Creators */}
       <div>
          <Creators />

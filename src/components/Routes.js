@@ -17,6 +17,7 @@ import ForgetPassword from './ForgetPassword';
 import Signup from './Signup';
 import Checkout from './Checkout';
 import WishList from './WishList';
+import ErrorPage from './ErrorPage';
 
 const RoutesConfig = () => {
 
@@ -38,7 +39,7 @@ const [shopdata , setShopData] = useState(shopData);
         <Route path="/ForgetPassword" element={<ForgetPassword/>}/>
         <Route path="/Signup" element={<Signup/>}/>
         <Route path="/Checkout" element={<Checkout />} />
-        <Route path="*" element={<div>Not Found!!</div>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </Router> 
