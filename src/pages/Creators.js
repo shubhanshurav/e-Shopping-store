@@ -16,7 +16,7 @@ const Creators = () => {
             <img
               src="/assets/Saketimg.jpeg"
               alt="deve"
-              className="object-cover rounded-full border-4 border-blue-700 Creators p-[2px]"
+              className="object-cover rounded-full border-4 border-blue-700 Creators p-1"
             />
             <p className="flex justify-center items-center text-[23px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3">
             <MdVerified className='text-blue-700 ' /> <span className='pl-1'>Saket Singh </span> 
