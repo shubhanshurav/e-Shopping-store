@@ -18,7 +18,7 @@ const Creators = () => {
               alt="deve"
               className="object-cover rounded-full border-4 border-blue-700 Creators p-1"
             />
-            <p className="flex justify-center items-center text-[23px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3">
+            <p className="flex justify-center items-center text-[22px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3">
             <MdVerified className='text-blue-700 ' /> <span className='pl-1'>Saket Singh </span> 
             </p>
             <p className='text-center text-gray-800 font-light text-[15px]'>MERN Developer</p>
@@ -45,8 +45,8 @@ const Creators = () => {
               alt="deve"
               className="object-cover rounded-full border-4 border-blue-700 Creators p-1"
             />
-            <p className="flex justify-center items-center text-[23px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3" >
-              <MdVerified className='text-blue-700 ' /> <span className='pl-1'>Shubhanshu Rao{" "} </span> 
+            <p className="flex justify-center items-center text-[22px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3" >
+              <MdVerified className='text-blue-700 ' /> <span className='pl-1'>Shubhanshu Rao</span> 
             </p>
             <p className='text-center text-gray-800 font-light text-[15px]'>MERN Developer</p>
             <div className="flex justify-center gap-6 m-2 items-center">
