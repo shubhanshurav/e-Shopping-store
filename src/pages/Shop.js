@@ -45,12 +45,11 @@ const Shop=() => {
         />
       </div>
 
-      <div className=" -mt-44 ">
+      <div className="-mt-44 ">
         {" "}
-        /
-        <p className=" text-[40px] font-semibold  flex justify-center text-white  ">
+        <p className="text-[35px] md:text-[40px] font-semibold flex justify-center text-white  ">
           {" "}
-          <span className="  text-red-700 ">#100%</span> Off On All Products
+          <span className="text-red-700 ">#100%</span> Off On All Products
         </p>
         <p className=" flex justify-center font-semibold text-[20px] text-blue-300">
           Make your orders we will deliver..
@@ -61,7 +60,7 @@ const Shop=() => {
         {
           loading ? <Spinner /> : 
           posts.length > 0 ?
-          (<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 px-2 gap-4 md:gap-6 m-auto py-8'>
+          (<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 px-2 gap-4 md:gap-6 m-auto py-24 md:py-12'>
               {
                 posts.map( (post) => (
                 <Product key = {post.id} post = {post}  />
