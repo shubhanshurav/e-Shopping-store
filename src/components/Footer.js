@@ -6,9 +6,9 @@ import {BsGithub, BsFacebook} from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <div className=" bg-gray-100 font-chakra-petch">
+    <div className=" bg-gray-100 font-chakra-petch m-auto">
 
-      <div className="grid lg:grid-cols-4 mg:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 border-b-2 border-t-2 border-gray-300 m-5">
+      <div className="grid md:grid-cols-3 border-b-2 border-t-2 m-auto border-gray-300">
         {/* contact  */}
         <div className="p-5">
           <div className="border-b-4 border-orange-600 w-24 pb-3">
@@ -63,55 +63,57 @@ const Footer = () => {
             </div>
           </div>
         </div>
+       
+       <div className="flex flex-row">
+          {/* About  */}
+          <div className="p-5">
+            <div className="border-b-4 border-orange-600 w-24 pb-3">
+              <h1 className="text-lg font-bold">About</h1>
+            </div>
+            <div className="flex flex-wrap flex-col pt-4 text-gray-700">
+              <a href="/About" className="mb-7 hover:text-blue-800">
+                About Us
+              </a>
+              <a href="/" className="mb-7 hover:text-blue-800">
+                Delivery
+              </a>
+              <a href="/" className="mb-7 hover:text-blue-800">
+                Privacy Policy
+              </a>
+              <a href="/" className="mb-7 hover:text-blue-800">
+                Terms & Conditions
+              </a>
+              <a href="/" className="mb-7 hover:text-blue-800">
+                Fee Policy
+              </a>
+            </div>
+          </div>
 
-        {/* About  */}
-        <div className="p-5">
-          <div className="border-b-4 border-orange-600 w-24 pb-3">
-            <h1 className="text-lg font-bold">About</h1>
-          </div>
-          <div className="flex flex-wrap flex-col pt-4 text-gray-700">
-            <a href="/About" className="mb-7 hover:text-blue-800">
-              About Us
-            </a>
-            <a href="/" className="mb-7 hover:text-blue-800">
-              Delivery
-            </a>
-            <a href="/" className="mb-7 hover:text-blue-800">
-              Privacy Policy
-            </a>
-            <a href="/" className="mb-7 hover:text-blue-800">
-              Terms & Conditions
-            </a>
-            <a href="/" className="mb-7 hover:text-blue-800">
-              Fee Policy
-            </a>
-          </div>
-        </div>
-
-        {/* Account  */}
-        <div className="p-5">
-          <div className="border-b-4 border-orange-600 w-24 pb-3">
-            <h1 className="text-lg font-bold">Account</h1>
-          </div>
-          <div className="flex flex-wrap flex-col pt-4 text-gray-700">
-            <a href="/Login" className="mb-7 hover:text-blue-800">
-              Profile
-            </a>
-            <a href="/Cart" className="mb-7 hover:text-blue-800">
-              View Cart
-            </a>
-            <a href="/About" className="mb-7 hover:text-blue-800">
-              Help
-            </a>
-            <a href="/Checkout" className="mb-7 hover:text-blue-800">
-              Payments
-            </a>
-            <a href="/Wishlist" className="mb-7 hover:text-blue-800">
-              My Wishlist
-            </a>
-            <a href="/" className="mb-7 hover:text-blue-800">
-              Coupons
-            </a>
+          {/* Account  */}
+          <div className="p-5">
+            <div className="border-b-4 border-orange-600 w-24 pb-3">
+              <h1 className="text-lg font-bold">Account</h1>
+            </div>
+            <div className="flex flex-wrap flex-col pt-4 text-gray-700">
+              <a href="/Login" className="mb-7 hover:text-blue-800">
+                Profile
+              </a>
+              <a href="/Cart" className="mb-7 hover:text-blue-800">
+                View Cart
+              </a>
+              <a href="/About" className="mb-7 hover:text-blue-800">
+                Help
+              </a>
+              <a href="/Checkout" className="mb-7 hover:text-blue-800">
+                Payments
+              </a>
+              <a href="/Wishlist" className="mb-7 hover:text-blue-800">
+                My Wishlist
+              </a>
+              <a href="/" className="mb-7 hover:text-blue-800">
+                Coupons
+              </a>
+            </div>
           </div>
         </div>
 

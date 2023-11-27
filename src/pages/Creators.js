@@ -11,17 +11,17 @@ const Creators = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 w-[50%] m-auto gap-10">
-          <div className="border-2 border-gray-300 rounded-xl m-auto bg-slate-100 px-6 py-6">
+        <div className="grid grid-cols-2 w-fit md:w-[50%] m-auto gap-2 md:gap-10 px-2">
+          <div className="border-2 border-gray-300 rounded-sm m-auto bg-slate-100 px-6 py-6 shadow-2xl">
             <img
               src="/assets/Saketimg.jpeg"
               alt="deve"
               className="object-cover rounded-full border-4 border-blue-700 Creators p-1"
             />
-            <p className="flex justify-center items-center text-[22px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3">
-            <MdVerified className='text-blue-700 ' /> <span className='pl-1'>Saket Singh </span> 
+            <p className="flex justify-center items-center text-rose-950 font-chakra-petch uppercase m-auto py-3">
+            <MdVerified className='text-blue-700'/> <span className='pl-1 font-bold text-[14px] md:text-[17px]'>Saket Singh </span> 
             </p>
-            <p className='text-center text-gray-800 font-light text-[15px]'>MERN Developer</p>
+            <p className='text-center text-gray-800 font-bold text-[13px] md:text-[15px]'>MERN Developer</p>
             <div className="flex justify-center gap-6 m-2 items-center">
               <a href="https://www.linkedin.com/in/saket-singh-810824240">
                 <img
@@ -39,16 +39,16 @@ const Creators = () => {
               </a>
             </div>
           </div>
-          <div className="border-2 border-gray-300 rounded-xl m-auto bg-slate-100 px-6 py-6">
+          <div className="border-2 border-gray-300 rounded-sm m-auto bg-slate-100 px-6 py-6 shadow-2xl">
             <img
               src="/assets/shubhanshuimg.jpg"
               alt="deve"
               className="object-cover rounded-full border-4 border-blue-700 Creators p-1"
             />
-            <p className="flex justify-center items-center text-[22px] text-rose-950 font-semibold font-chakra-petch uppercase m-auto py-3" >
-              <MdVerified className='text-blue-700 ' /> <span className='pl-1'>Shubhanshu Rao</span> 
+            <p className="flex justify-center items-center text-rose-950 font-chakra-petch uppercase m-auto py-3" >
+              <MdVerified className='text-blue-700 ' /> <span className='pl-1 text-[14px] font-bold md:text-[17px]'>Shubhanshu Rao</span> 
             </p>
-            <p className='text-center text-gray-800 font-light text-[15px]'>MERN Developer</p>
+            <p className='text-center text-gray-800 font-bold text-[13px] md:text-[15px]'>MERN Developer</p>
             <div className="flex justify-center gap-6 m-2 items-center">
               <a href="https://www.linkedin.com/in/shubhanshu-rao-052320208/">
                 <img

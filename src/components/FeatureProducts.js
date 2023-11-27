@@ -176,16 +176,16 @@ const FeatureProducts = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 m-auto gap-10 py-8 px-20">
+      <div className="grid grid-cols-2 m-auto gap-2 md:gap-10 py-4 md:py-8 px-2 md:px-20">
         {/* card1 */}
-        <div className="flex flex-col border border-gray-300 m-auto px-2 md:px-5 rounded-lg text-start shadow-lg py-6">
+        <div className="flex flex-col border border-gray-300 m-auto px-2 md:px-5 rounded-lg text-start shadow-lg py-3 md:py-6">
           <div className="">
             <img src="/assets/banner/b17.jpg" className="rounded-md" />
           </div>
-          <div className="pt-2 p-2 text-md font-chakra-petch ml-0">
+          <div className="pt-2 p-2 text-md font-chakra-petch">
             <h1>Hot Deals</h1>
             <p>Buy One get One free.</p>
-            <p>The latest best collection in our closet</p>
+            <p>The latest best collection</p>
             <p>Feel Cute with our outfits</p>
             <button className="bg-blue-700 border-2 border-blue-700 rounded-lg text-md text-white py-1 px-2 mt-2 font-chakra-petch font-extralight hover:bg-blue-800">
               Shop Now
@@ -198,7 +198,7 @@ const FeatureProducts = () => {
           <div className="">
             <img src="/assets/banner/b10.jpg" className="rounded-md" />
           </div>
-          <div className="pt-2 text-md font-chakra-petch ml-2">
+          <div className="pt-2 text-md font-chakra-petch">
             <p>Season-In</p>
             <p>All Weather Attire</p>
             <p>It never matter which season it is</p>
