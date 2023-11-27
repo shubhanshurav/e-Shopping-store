@@ -57,11 +57,11 @@ const Shop=() => {
         </p>
       </div>
  
-      <div className="mt-12">
+      <div className="py-6 md:py-14">
         {
           loading ? <Spinner /> : 
           posts.length > 0 ?
-          (<div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl p-2 m-auto space-y-8 space-x-10 min-h-[80vh]'>
+          (<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 px-2 gap-4 md:gap-6 m-auto py-8'>
               {
                 posts.map( (post) => (
                 <Product key = {post.id} post = {post}  />
@@ -78,7 +78,7 @@ const Shop=() => {
         {
           // loading ? <Spinner /> : 
           shopdata.length > 0 ?
-          (<div className='grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-6xl min-w-3xl p-2 mx-auto space-y-8 space-x-10 min-h-[80vh]'>
+          (<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 px-2 gap-4 md: mx-auto py-8'>
               {
                 shopdata.map((card) => (
                   <Card key = {card.id} card = {card} />

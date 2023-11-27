@@ -64,16 +64,16 @@ const HomePage = () => {
       >
         {/* Content inside the banner */}
         <div className="text-white text-left lg:pt-16 md:pt-10 sm:pt-8 py-16 px-16 inline-block">
-          <p className="sm:text-xl md:text-2xl lg:text-xl text-black pb-8">
+          <p className="text-xl md:text-2xl lg:text-xl text-black pb-8">
             Trade in offer
           </p>
-          <h1 className="sm:text-2xl md:text-4xl lg:text-5xl text-amber-600 font-bold lg:pb-5 sm:pb-4">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl text-amber-600 font-bold lg:pb-5 sm:pb-4">
             Super Value Deals
           </h1>
-          <h4 className="sm:text-xl md:text-2xl lg:text:3xl  text-black pb-5 sm:pb-4">
+          <h4 className="text-xl md:text-2xl lg:text:3xl  text-black pb-5 sm:pb-4">
             On all products
           </h4>
-          <p className="sm:text-xl md:text-1xl lg:text:2xl text-black pb-5 sm:pb-4">
+          <p className="text-xl md:text-1xl lg:text:2xl text-black pb-5 sm:pb-4">
             Save more today with Apna Fasion Store
           </p>
           <Link to="/Shop">
@@ -86,28 +86,28 @@ const HomePage = () => {
       </div>
       
       {/* Five cards */}
-      <div className="flex flex-row flex-wrap m-auto p-10 place-content-center bg-white" >
-        <div className="border-lg border-2 border-gray-300 p-5 m-5 rounded-lg">
+      <div className="grid grid-cols-3 md:grid-cols-5 m-auto p-6 md:p-10 place-content-center bg-white" >
+        <div className="border-lg border-2 border-gray-300 p-2 md:p-5 m-2 md:m-5 rounded-lg">
            <img className='w-20' src='/assets/icons/icon1.png' alt="icons" />
            <p className="text-center">Fast Orders</p>
         </div>
 
-        <div  className="border-lg border-2 border-gray-300 p-5 m-5 rounded-lg">
+        <div  className="border-lg border-2 border-gray-300 p-2 md:p-5 m-2 md:m-5 rounded-lg">
            <img className='w-20' src='/assets/icons/icon2.png' alt="icons" />
            <p className="text-center">Quick Shipping</p>
         </div>
 
-        <div  className="border-lg border-2 border-gray-300 p-5 m-5 rounded-lg">
+        <div  className="border-lg border-2 border-gray-300 p-2 md:p-5 m-2 md:m-5 rounded-lg">
            <img className='w-20' src='/assets/icons/icon3.png' alt="icons" />
            <p>High Saves</p>
         </div>
 
-        <div  className="border-lg border-2 border-gray-300 p-5 m-5 rounded-lg">
+        <div  className="border-lg border-2 border-gray-300 p-2 md:p-5 m-2 md:m-5 rounded-lg">
            <img className='w-20' src='/assets/icons/icon4.png' alt="icons" />
            <p>24/7 Support</p>
         </div>
 
-        <div  className="border-lg border-2 border-gray-300 p-5 m-5 rounded-lg">
+        <div  className="border-lg border-2 border-gray-300 p-2 md:p-5 m-2 md:m-5 rounded-lg">
            <img className='w-20' src='/assets/icons/icon5.png' alt="icons" />
            <p>Online Orders</p>
         </div>
@@ -120,11 +120,11 @@ const HomePage = () => {
       <div className="bg-white">
           <div className="text-center">
               <h1 className="text-4xl font-bold text-orange-600 p-4">What our customers say...</h1>
-              <p>Our customers never miss a bit on providing feedback</p>
+              <p className="text-lg">Our customers never miss a bit on providing feedback</p>
           </div>
-          <div className='flex flex-wrap flex-row place-content-center m-auto pt-14'>
-            <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
-              <img src='/assets/blog/blog-1.jpg' alt='product' className='rounded-3xl p-2'/>
+          <div className='grid grid-cols-2 md:grid-cols-4 m-auto py-10 md:py-14 gap-4 px-2'>
+            <div className='border-2 border-gray-300 w-48 md:w-64 rounded-md shadow-lg m-auto'>
+              <img src='/assets/blog/blog-1.jpg' alt='product' className='rounded-md md:rounded-3xl p-2'/>
               <p className="px-4 font-serif text-zinc-700 text-sm">Some quick example text to build on the card title and make up the bulk of the cards content....</p>
               <div className="text-right pr-5 pb-2">
                 <a className="text-blue-900 font-semibold font-mono cursor-pointer overflow-hidden text-sm">
@@ -132,8 +132,8 @@ const HomePage = () => {
                 </a>
               </div>
             </div>
-            <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
-              <img src='/assets/blog/blog-2.jpg' alt='product' className='rounded-3xl p-2'/>
+            <div className='border-2 border-gray-300 w-48 md:w-64 rounded-md shadow-lg m-auto'>
+              <img src='/assets/blog/blog-2.jpg' alt='product' className='rounded-md md:rounded-3xl p-2'/>
               <p className="px-4 font-serif text-zinc-700 text-sm">Some quick example text to build on the card title and make up the bulk of the cards content....</p>
               <div className="text-right pr-5 pb-2">
                 <a className="text-blue-900 font-semibold font-mono cursor-pointer overflow-hidden text-sm">
@@ -141,8 +141,8 @@ const HomePage = () => {
                 </a>
               </div>
             </div>
-            <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
-              <img src='/assets/blog/blog-3.jpg' alt='product' className='rounded-3xl p-2'/>
+            <div className='border-2 border-gray-300 w-48 md:w-64 rounded-md shadow-lg m-auto'>
+              <img src='/assets/blog/blog-3.jpg' alt='product' className='rounded-md md:rounded-3xl p-2'/>
               <p className="px-4 font-serif text-zinc-700 text-sm">Some quick example text to build on the card title and make up the bulk of the cards content....</p>
               <div className="text-right pr-5 pb-2">
                 <a className="text-blue-900 font-semibold font-mono cursor-pointer overflow-hidden text-sm">
@@ -150,8 +150,8 @@ const HomePage = () => {
                 </a>
               </div>
             </div>
-            <div className='border-2 border-gray-300 w-64 m-5 rounded-2xl'>
-              <img src='/assets/blog/blog-4.jpg' alt='product' className='rounded-3xl p-2'/>
+            <div className='border-2 border-gray-300 w-48 md:w-64 rounded-md shadow-lg m-auto'>
+              <img src='/assets/blog/blog-4.jpg' alt='product' className='rounded-md md:rounded-3xl p-2'/>
               <p className="px-4 font-serif text-zinc-700 text-sm">Some quick example text to build on the card title and make up the bulk of the cards content....</p>
               <div className="text-right pr-5 pb-2">
                 <a className="text-blue-900 font-semibold font-mono cursor-pointer overflow-hidden text-sm">
@@ -168,7 +168,7 @@ const HomePage = () => {
             <h2 className="text-center text-blue-700 lg:text-5xl sm:text-2xl font-bold pb-4">Trusted by users Worldwide</h2>
             <p className="text-center text-gray-300 text-sm font-light">Lorem ipsum dolor sit amet consect adipisicing possimus.</p>
           </div>
-        <dl class="grid grid-cols-1 gap-x-2 gap-y-10 text-center font-sans lg:grid-cols-3">
+        <div class="grid grid-cols-1 gap-x-2 gap-y-10 text-center font-sans lg:grid-cols-3">
           <div class="mx-auto flex max-w-xs flex-col gap-y-4 border-r-2 border-blue-800 m-12">
             <dt class="text-base leading-7 text-gray-400 px-12">Transactions every 24 hours</dt>
             <dd class="order-first text-2xl font-semibold text-white sm:text-5xl px-12">4000+</dd>
@@ -181,7 +181,7 @@ const HomePage = () => {
             <dt class="text-base leading-7 text-gray-400 px-12" >New users annually</dt>
             <dd class="order-first text-2xl font-semibold text-white sm:text-5xl px-12">10,000+</dd>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
 

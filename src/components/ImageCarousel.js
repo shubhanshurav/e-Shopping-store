@@ -21,7 +21,7 @@ const ImageCarousel = ({ post }) => {
 
   return (
     <div>
-      <div className="h-[180px]">
+      <div className="h-[120px] md:h-[180px]">
         <img src={post.images[currentImageIndex]} className="h-full w-full" alt={post.title} />
         <div className="top-0 right-0 left-0 flex justify-between -mt-16 -mx-4 ">
           <button onClick={previousImage} className=" text-2xl border-[1px] border-black py-1 m-1 rounded bg-gray-100">

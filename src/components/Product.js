@@ -34,17 +34,17 @@ const Product = ({ post }) => {
   }
   
   return (
-    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl p-4 m-auto pl-5 rounded-xl border-2 border-gray-200'>
-      <div className='text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1 uppercase'>
+    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl px-4 py-4 m-auto rounded-xl border-2 border-gray-200'>
+      <div className='text-gray-700 font-semibold text-lg text-left truncate w-40 py-1 uppercase'>
         <p >{post.title}</p>
       </div>
-      <div>
+      {/* <div>
           {post.description ? (
             <p className='w-45 text-gray-400 font-normal text-[12px] text-left py-1'>
-              {post.description.split(" ").slice(0, 10).join(" ") + "..."}
+              {post.description.split(" ").slice(0, 8).join(" ") + "..."}
             </p>
           ) : null}
-      </div>
+      </div> */}
       <div>
         {wish.some((p) => p.id == post.id) ? (
             <button
@@ -63,11 +63,16 @@ const Product = ({ post }) => {
           )}
         <ImageCarousel post={post} />
       </div>
-      <div>
-        <p className='pt-3 text-xs font-medium uppercase'>{post.category}</p>
+      <div className='flex justify-between items-center py-2'>
+        <p className='text-md md:text-xl font-bold'>{post.brand}</p>
+        <p className='text-sm font-medium uppercase'>{post.category}</p>
       </div>
-      <div className='text-sm'>
-        <p className='text-xl px-2 py-2 font-light'>{post.brand}</p>
+      <div>
+          {post.description ? (
+            <p className='w-45 text-gray-400 font-normal text-[12px] text-left'>
+              {post.description.split(" ").slice(0, 8).join(" ") + "..."}
+            </p>
+          ) : null}
       </div>
       <div className='text-sm'>
          <div className='flex justify-between'>
