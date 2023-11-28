@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-blue-900 sticky top-0">
+    <nav className="bg-blue-800 sticky top-0 shadow-2xl">
       <div className="m-auto flex lg:flex-row ">
         
         {/* Hamburger Menu */}
@@ -29,20 +29,20 @@ const NavBar = () => {
         {/* Logo */}
         <div className={`m-auto lg:flex ${isMenuOpen ? 'hidden' : 'block'}`}>
            <Link to="/" className="text-center ">
-             <img src='/assets/AFSLogo.png' className='lg:w-44 sm:w-56 ' alt='Logo'/>
+             <img src='/assets/logo.png' className='w-32' alt='Logo'/>
            </Link>
        </div>
 
         {/* Search */}
-        <div className={`lg:flex lg:flex-row lg:w-auto lg:items-center p-5 m-auto ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className={`lg:flex lg:flex-row lg:w-auto lg:items-center p-2 m-auto ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className='flex flex-row mr-8'>
               <input
                 type="text"
                 placeholder="Find Product here..."
-                className="w-44 p-2 h-10 font-chakra-petch rounded-l-md border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
+                className="w-44 p-1 h-10 font-chakra-petch rounded-l-md border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
               />
-              <button className='p-2 w-10 h-10 rounded-r-md bg-transparent hover:text-stone-100 hover:bg-gray-900 text-white border-y-2 border-r-2'>
-                <img src='/assets/icons/SearchIcon.png' className='h-6 w-6 '/>
+              <button className='p-1 w-10 h-10 rounded-r-md bg-transparent hover:text-stone-100 hover:bg-gray-900 text-white border-y-2 border-r-2'>
+                <img src='/assets/icons/SearchIcon.png' className='h-6 w-6' alt="searchicon" />
               </button>
           </div>
 

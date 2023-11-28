@@ -56,11 +56,11 @@ const Shop=() => {
         </p>
       </div>
  
-      <div className="py-6 md:py-14">
+      <div className="py-6 md:py-14 px-4">
         {
           loading ? <Spinner /> : 
           posts.length > 0 ?
-          (<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 px-2 gap-4 md:gap-6 m-auto py-24 md:py-12'>
+          (<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-0 md:gap-6 m-auto py-24 md:py-12'>
               {
                 posts.map( (post) => (
                 <Product key = {post.id} post = {post}  />

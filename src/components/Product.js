@@ -38,15 +38,8 @@ const Product = ({ post }) => {
       <div className='text-gray-700 font-semibold text-lg text-left truncate w-40 py-1 uppercase'>
         <p >{post.title}</p>
       </div>
-      {/* <div>
-          {post.description ? (
-            <p className='w-45 text-gray-400 font-normal text-[12px] text-left py-1'>
-              {post.description.split(" ").slice(0, 8).join(" ") + "..."}
-            </p>
-          ) : null}
-      </div> */}
       <div>
-        {wish.some((p) => p.id == post.id) ? (
+        {wish.some((p) => p.id === post.id) ? (
             <button
               onClick={removeFromWishList}
               className='text-gray-700 rounded-full font-semibold text-[12px] p-1 px-1 uppercase
@@ -63,7 +56,7 @@ const Product = ({ post }) => {
           )}
         <ImageCarousel post={post} />
       </div>
-      <div className='flex justify-between items-center py-2'>
+      <div className='flex justify-between items-center py-2'> 
         <p className='text-md md:text-xl font-bold'>{post.brand}</p>
         <p className='text-sm font-medium uppercase'>{post.category}</p>
       </div>
@@ -90,7 +83,7 @@ const Product = ({ post }) => {
         <div>
           <p className='text-blue-700 font-semibold m-auto'>${post.price}</p>
         </div>
-        {cart.some((p) => p.id == post.id) ? (
+        {cart.some((p) => p.id === post.id) ? (
           <button
             onClick={removeFromCart}
             className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase
