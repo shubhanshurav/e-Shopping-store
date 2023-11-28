@@ -127,7 +127,7 @@ const HomePage = () => {
               <img src='/assets/blog/blog-1.jpg' alt='product' className='rounded-md md:rounded-3xl p-2'/>
               <p className="px-4 font-serif text-zinc-700 text-sm">Some quick example text to build on the card title and make up the bulk of the cards content....</p>
               <div className="text-right pr-5 pb-2">
-                <a className="text-blue-900 font-semibold font-mono cursor-pointer overflow-hidden text-sm">
+                <a href="/" className="text-blue-900 font-semibold font-mono cursor-pointer overflow-hidden text-sm">
                 Learn more
                 </a>
               </div>
