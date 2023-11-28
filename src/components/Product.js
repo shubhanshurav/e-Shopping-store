@@ -32,6 +32,8 @@ const Product = ({ post }) => {
     dispatch(remove(post.id));
     toast.error("Item removed from Cart");
   }
+
+  if(post == null) return null;
   
   return (
     <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl px-4 py-4 m-auto rounded-xl border-2 border-gray-200'>
