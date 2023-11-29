@@ -1,4 +1,4 @@
-## Apna Fashion Store - E-Commerce Website
+## E-Shop - E-Commerce Website
 
 ### Table of Contents
 
@@ -13,7 +13,7 @@
 
 ### 1. Project Overview <a name="project-overview"></a>
 
-Apna Fashion Store is a web application built using the MERN (MongoDB, Express.js, React, and Node.js) stack. It is designed for online fashion retail, allowing users to browse and shop for various fashion products. This documentation provides an overview of the project, its technologies, and how to set it up and use it.
+E-Shop is a web application built using the MERN (MongoDB, Express.js, React, and Node.js) stack. It is designed for online fashion retail, allowing users to browse and shop for various fashion products. This documentation provides an overview of the project, its technologies, and how to set it up and use it.
 
 ### 2. Technologies Used <a name="technologies-used"></a>
 
@@ -45,7 +45,7 @@ Explain how to install and set up the project locally. Include steps for setting
 
 ```bash
 # Clone the repository
-git clone https://github.com/shubhanshurav/Apna-FAshion-Store.git
+git clone https://github.com/shubhanshurav/E-Shop.git
 
 # Navigate to the project directory
 cd your-repo
