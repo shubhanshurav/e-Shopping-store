@@ -74,7 +74,7 @@ const ProductDetails = () => {
   };
 
   return (
-    <div className="flex justify-between px-10 py-20 border m-10 shadow-2xl">
+    <div className="flex flex-col-reverse md:flex-row justify-between px-5 md:px-10 py-8 md:py-20 border m-6 md:m-10 shadow-2xl">
       <div className="pr-8">
         <div className="flex pb-2">
           <div className="text-gray-700 font-semibold text-xl text-left truncate w-full py-1 uppercase">
@@ -153,8 +153,8 @@ const ProductDetails = () => {
           )}
         </div>
       </div>
-      <div className="w-[50%] px-6">
-        <div className="h-[120px] md:h-[200px]">
+      <div className="w-full md:w-[50%] px-6 py-4 md:py-0">
+        <div className="h-full md:h-[200px]">
           <img
             src={productDetails.images[currentImageIndex]}
             className="h-full w-full"
