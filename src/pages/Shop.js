@@ -63,7 +63,7 @@ const Shop=() => {
           (<div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-0 md:gap-6 m-auto py-24 md:py-12'>
               {
                 posts.map( (post) => (
-                <Product key = {post.id} post = {post}  />
+                  <Product key = {post.id} post = {post}  />
               ) )
               }
             </div> ) :

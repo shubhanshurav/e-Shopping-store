@@ -18,6 +18,7 @@ import Signup from './Signup';
 import Checkout from './Checkout';
 import WishList from './WishList';
 import ErrorPage from './ErrorPage';
+import ProductDetails from './ProductDetails';
 
 const RoutesConfig = () => {
 
@@ -31,6 +32,7 @@ const [shopdata , setShopData] = useState(shopData);
         <Route path="/" element={<HomePage />} />
         <Route path="/Shop" element={<Shop shopdata={shopdata} />} />
         <Route path="/Shop/ViewDetail/:id" element={<ViewDetails />}/>
+        <Route path="/Shop/productDetails/:id" element={<ProductDetails />}/>
         <Route path="/About" element={<About datacustomer={datacustomer}/>}/>
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Login" element={<Login />} />

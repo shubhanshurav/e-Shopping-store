@@ -44,7 +44,7 @@
 
 
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
 import { addCart, removeCart} from '../redux/Slices/CartSliceForCard';
 import { addWish, removeWish} from '../redux/Slices/WishSlice';
@@ -80,14 +80,14 @@ const Card = ({ card }) => {
     toast.error("card removed from Cart");
   }
 
-  console.log( );
+  // console.log( );
   // console.log("hlw")
 
   return (
     <div className="border-inherit border rounded-xl py-2 px-3 m-auto "  >
 
       <div className="text-xl">
-      {wish.some((p) => p.id == card.id) ? (
+      {wish.some((p) => p.id === card.id) ? (
             <button
               onClick={removeFromWishList}
               className='text-gray-700 rounded-full font-semibold text-[12px] p-1 px-1 uppercase

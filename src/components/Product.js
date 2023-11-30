@@ -7,11 +7,13 @@ import ImageCarousel from './ImageCarousel';
 import StarRating from './StarRating'; 
 import {AiOutlineHeart} from 'react-icons/ai';
 import {AiTwotoneHeart} from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 const Product = ({ post }) => {
   
   const { cart, wish } = useSelector((state) => state);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const addToWishList = () => {
     dispatch(addWish(post));
@@ -32,11 +34,11 @@ const Product = ({ post }) => {
     dispatch(remove(post.id));
     toast.error("Item removed from Cart");
   }
-
-  if(post == null) return null;
   
+  // console.log(post);
   return (
-    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl px-4 py-4 m-auto rounded-xl border-2 border-gray-200'>
+    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl px-4 py-4 m-auto rounded-xl border-2 border-gray-200'
+     onClick={()=>navigate("/Shop/productDetails/" + post.id)}>
       <div className='text-gray-700 font-semibold text-lg text-left truncate w-40 py-1 uppercase'>
         <p >{post.title}</p>
       </div>
