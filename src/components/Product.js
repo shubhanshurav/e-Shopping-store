@@ -12,12 +12,21 @@ import { useNavigate } from 'react-router-dom';
 const Product = ({ post }) => {
   
   const { cart, wish } = useSelector((state) => state);
+  const { auth } = useSelector((state) => state);
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const addToWishList = () => {
-    dispatch(addWish(post));
-    toast.success("Item added to Wishlist");
+    // dispatch(addWish(post));
+    // toast.success("Item added to Wishlist");
+    if (auth.token) {
+      dispatch(addWish(post));
+      toast.success("Item added to Wishlist");
+    } else {
+      // Redirect to login page
+      navigate('/login');
+    }
   }
 
   const removeFromWishList = () => {
@@ -26,8 +35,15 @@ const Product = ({ post }) => {
   }
 
   const addToCart = () => {
-    dispatch(add(post));
-    toast.success("Item added to Cart");
+    // dispatch(add(post));
+    // toast.success("Item added to Cart");
+    if (auth.token) {
+      dispatch(add(post));
+      toast.success("Item added to Cart");
+    } else {
+      // Redirect to login page
+      navigate('/login');
+    }
   }
 
   const removeFromCart = () => {
@@ -37,8 +53,8 @@ const Product = ({ post }) => {
   
   // console.log(post);
   return (
-    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl px-4 py-4 m-auto rounded-xl border-2 border-gray-200'
-     onClick={()=>navigate("/Shop/productDetails/" + post.id)}>
+    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl px-4 py-4 m-auto rounded-xl'
+     >
       <div className='text-gray-700 font-semibold text-lg text-left truncate w-40 py-1 uppercase'>
         <p >{post.title}</p>
       </div>
@@ -74,7 +90,7 @@ const Product = ({ post }) => {
       <div className='text-sm'>
          <div className='flex justify-between'>
             <p className='font-md text-lg'>Stock: </p>
-            <p className='text-blue-700 font-bold'>{post.stock}</p>
+            <p className='text-richblack-100 font-bold'>{post.stock}</p>
          </div>
       </div>
       <div className='text-sm '>
@@ -85,13 +101,13 @@ const Product = ({ post }) => {
       </div>
       <div className='flex justify-between items-center w-full mt-2'>
         <div>
-          <p className='text-blue-700 font-semibold m-auto'>${post.price}</p>
+          <p className='text-richblack-100 font-semibold m-auto'>${post.price}</p>
         </div>
         {cart.some((p) => p.id === post.id) ? (
           <button
             onClick={removeFromCart}
             className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase
-            hover:bg-gray-700 hover:text-white
+            hover:bg-black hover:text-white
             transition duration-300 ease-in'>
             Remove Item
           </button>
@@ -99,7 +115,7 @@ const Product = ({ post }) => {
           <button
             onClick={addToCart}
             className='text-gray-700 border-2 border-gray-700 rounded-full font-semibold text-[12px] p-1 px-3 uppercase
-            hover.bg-gray-700 hover.text-white
+            hover:bg-black hover:text-white
             transition duration-300 ease-in'>
             Add to Cart
           </button>

@@ -180,7 +180,8 @@ const ProductDetails = () => {
             <img
               key={index}
               src={image}
-              alt={`${productDetails.title} - Image ${index + 1}`}
+              // alt={`${productDetails.title} - Image ${index + 1}`}
+              alt={`${productDetails.title} - ${index + 1}`}
               className={`w-1/4 mx-1 my-2 cursor-pointer ${
                 index === currentImageIndex ? "border border-blue-500" : ""
               }`}

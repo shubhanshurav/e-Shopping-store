@@ -67,7 +67,7 @@ const HomePage = () => {
           <p className="text-xl md:text-2xl lg:text-xl text-black pb-8">
             Trade in offer
           </p>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl text-amber-600 font-bold lg:pb-5 sm:pb-4">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl text-[orange] font-bold lg:pb-5 sm:pb-4">
             Super Value Deals
           </h1>
           <h4 className="text-xl md:text-2xl lg:text:3xl  text-black pb-5 sm:pb-4">

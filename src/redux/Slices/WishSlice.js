@@ -15,4 +15,3 @@ export const WishSlice = createSlice ({
 
 export const {addWish, removeWish} = WishSlice.actions;
 export default WishSlice.reducer;
-

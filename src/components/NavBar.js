@@ -3,17 +3,22 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {RxCross1} from 'react-icons/rx';
+import { ACCOUNT_TYPE } from "../utils/constants"
+import ProfileDropdown from "../components/Auth/ProfileDropdown"
 
 const NavBar = () => {
   const { cart, wish,cartCard } = useSelector((state) => state);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const { token } = useSelector((state) => state.auth)
+  const { user } = useSelector((state) => state.profile)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <nav className="bg-blue-800 sticky top-0 shadow-2xl">
+    <nav className="bg-bluebg-200 sticky top-0 shadow-2xl z-10">
       <div className="m-auto flex lg:flex-row ">
         
         {/* Hamburger Menu */}
@@ -35,14 +40,15 @@ const NavBar = () => {
 
         {/* Search */}
         <div className={`lg:flex lg:flex-row lg:w-auto lg:items-center p-2 m-auto ${isMenuOpen ? 'block' : 'hidden'}`}>
-          <div className='flex flex-row mr-8'>
+          <div className='flex flex-row mr-8 border border-white rounded-md'>
               <input
                 type="text"
                 placeholder="Find Product here..."
-                className="w-44 p-1 h-10 font-chakra-petch rounded-l-md border-gray-300 focus:outline-none border-y-2 border-l-2 focus:border-blue-400"
+                className="w-40 p-1 h-10 font-chakra-petch rounded-l-md"
               />
-              <button className='p-1 w-10 h-10 rounded-r-md bg-transparent hover:text-stone-100 hover:bg-gray-900 text-white border-y-2 border-r-2'>
-                <img src='/assets/icons/SearchIcon.png' className='h-6 w-6' alt="searchicon" />
+              <button className='p-1 w-12 h-10 rounded-r-md'>
+                {/* <img src='/assets/icons/SearchIcon.png' className='h-6 w-6' alt="searchicon" /> */}
+                🔍
               </button>
           </div>
 
@@ -66,22 +72,55 @@ const NavBar = () => {
         </div>
 
         {/* User Actions */}
+        <div className='items-center flex gap-5'>
+            {user && user?.accountType !== ACCOUNT_TYPE.INSTRUCTOR && (
+              <Link to="/dashboard/cart" className="relative">
+              <img src='/assets/cart.svg' alt='CartLogo'/>
+                {(cart.length > 0 || cartCard.length > 0) && (
+                  <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{cart.length + cartCard.length}</span>
+                )}
+              </Link>
+            )}
+            {user && user?.accountType !== ACCOUNT_TYPE.INSTRUCTOR && (
+              <Link to="/Wishlist" className="text-white flex place-content-center w-7 relative">
+                <img src='/assets/wishlist.svg' alt='wishlist'/>
+                {wish.length > 0 &&
+                  <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{wish.length}</span>
+                }
+              </Link>
+            )}
+        </div>
         <div className={`lg:flex flex-row space-x-8 m-auto ${isMenuOpen ? 'hidden' : 'flex'}`}>
-          <Link to="/Login" className="text-white w-7">
-            <img src='/assets/user.svg' alt='UserLogo'/>
+        {token === null && (
+          <Link to="/login">
+            <button className="rounded-[8px] mx-1 md:mx-0 border border-richblack-700 bg-richblack-800 px-[12px] py-[8px] text-richblack-100">
+              Log in
+            </button>
           </Link>
-          <Link to="/Wishlist" className="text-white flex place-content-center w-7 relative">
+        )}
+        {token === null && (
+          <Link to="/signup">
+            <button className="rounded-[8px] border border-richblack-700 bg-richblack-800 px-[12px] py-[8px] text-richblack-100">
+              Sign up
+            </button>
+          </Link>
+        )}
+
+        {token !== null && <ProfileDropdown />}
+
+          {/* <Link to="/Wishlist" className="text-white flex place-content-center w-7 relative">
             <img src='/assets/wishlist.svg' alt='wishlist'/>
             {wish.length > 0 &&
               <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{wish.length}</span>
             }
-          </Link>
-          <Link to="/Cart" className="text-white flex place-content-center w-7 relative">
+          </Link> */}
+
+          {/* <Link to="/Cart" className="text-white flex place-content-center w-7 relative">
             <img src='/assets/cart.svg' alt='CartLogo'/>
             {(cart.length > 0 || cartCard.length > 0) && (
               <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{cart.length + cartCard.length}</span>
             )}
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>
@@ -89,4 +128,6 @@ const NavBar = () => {
 }
 
 export default NavBar;
+
+
 

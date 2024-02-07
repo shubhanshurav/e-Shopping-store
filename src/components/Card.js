@@ -60,10 +60,16 @@ const Card = ({ card }) => {
 
   const { cartCard, wish } = useSelector((state) => state);
   const dispatch = useDispatch();
+  const { auth } = useSelector((state) => state);
 
   const addToWishList = () => {
-    dispatch(addWish(card));
-    toast.success("Item added to Wishlist");
+    if (auth.token) {
+      dispatch(addWish(card));
+      toast.success("Item added to Wishlist");
+    } else {
+      // Redirect to login page
+      navigate('/login');
+    }
   }
 
   const removeFromWishList = () => {
@@ -71,8 +77,14 @@ const Card = ({ card }) => {
     toast.error("Item removed from Wishlist");
   }
   const addToCart = () => {
-    dispatch(addCart(card));
-    toast.success("card added to Cart");
+
+    if (auth.token) {
+      dispatch(addCart(card));
+      toast.success("card added to Cart");
+    } else {
+      // Redirect to login page
+      navigate('/login');
+    }
   }
 
   const removeFromCart = () => {

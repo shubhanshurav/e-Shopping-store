@@ -36,7 +36,7 @@ const Shop=() => {
   },[])
 
   return (
-    <div className="overflow-hidden font-chakra-petch">
+    <div className="overflow-hidden font-chakra-petch bg-bluebg-50 text-richblack-5">
       <div id="imagesection">
         <img
           src="./assets/banner/b1.jpg"
