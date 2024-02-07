@@ -51,7 +51,7 @@ const Card = ({ card }) => {
   // console.log("hlw")
 
   return (
-    <div className="border-inherit border rounded-xl py-2 px-3 m-auto "  >
+    <div className="bg-richblack-5 rounded-xl py-2 px-3 m-auto "  >
 
       <div className="text-xl">
       {wish.some((p) => p.id === card.id) ? (

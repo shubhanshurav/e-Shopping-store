@@ -14,6 +14,19 @@ const Shop=() => {
 
   const [shopdata , setShopData] = useState(shopData);
 
+  const [searchTerm, setSearchTerm] = useState('');
+  const [filteredItems, setFilteredItems] = useState([]);
+
+  const handleSearch = (e) => {
+    const term = e.target.value.toLowerCase();
+    setSearchTerm(term);
+
+    const filtered = posts.filter((post) =>
+      post.title.toLowerCase().includes(term)
+    );
+    setFilteredItems(filtered);
+  };
+
 
   async function fetchProductData() {
      setLoading(true);
@@ -36,7 +49,7 @@ const Shop=() => {
   },[])
 
   return (
-    <div className="overflow-hidden font-chakra-petch bg-bluebg-50 text-richblack-5">
+    <div className="overflow-hidden font-chakra-petch bg-richblack-25 ">
       <div id="imagesection">
         <img
           src="./assets/banner/b1.jpg"
@@ -55,6 +68,30 @@ const Shop=() => {
           Make your orders we will deliver..
         </p>
       </div>
+
+    {/* Search functionality */}
+     <div className="">
+        <div className='flex flex-row m-auto rounded-md text-center w-[50%] my-5'>
+                  <input
+                    type="text"
+                    placeholder="Find Product here..."
+                    className="w-[70%] p-1 px-4 font-semibold h-10 font-chakra-petch text-black rounded-l-md"
+                    value={searchTerm}
+                    onChange={handleSearch}
+                  />
+                  <button className='p-1 w-[30%] h-10 rounded-r-md text-black font-bold bg-[orange]'>
+                    search
+                  </button>
+          </div>
+
+            {/* Display filtered items */}
+            <div className="grid grid-cols-2 md:grid-cols-4">
+              {filteredItems.map((post) => (
+                <Product key={post.id} post = {post} />
+              ))}
+            </div>
+     </div>
+
  
       <div className="py-6 md:py-14 px-4">
         {

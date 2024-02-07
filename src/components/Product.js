@@ -53,7 +53,7 @@ const Product = ({ post }) => {
   
   // console.log(post);
   return (
-    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl px-4 py-4 m-auto rounded-xl'
+    <div className='flex flex-col justify-between cursor-pointer transition duration-300 ease-in shadow-xl px-4 py-4 m-auto rounded-xl bg-richblack-5'
      >
       <div className='text-gray-700 font-semibold text-lg text-left truncate w-40 py-1 uppercase'>
         <p >{post.title}</p>
@@ -90,7 +90,7 @@ const Product = ({ post }) => {
       <div className='text-sm'>
          <div className='flex justify-between'>
             <p className='font-md text-lg'>Stock: </p>
-            <p className='text-richblack-100 font-bold'>{post.stock}</p>
+            <p className='font-bold'>{post.stock}</p>
          </div>
       </div>
       <div className='text-sm '>
@@ -101,7 +101,7 @@ const Product = ({ post }) => {
       </div>
       <div className='flex justify-between items-center w-full mt-2'>
         <div>
-          <p className='text-richblack-100 font-semibold m-auto'>${post.price}</p>
+          <p className='font-semibold m-auto'>${post.price}</p>
         </div>
         {cart.some((p) => p.id === post.id) ? (
           <button

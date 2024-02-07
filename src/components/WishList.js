@@ -8,10 +8,10 @@ const WishList = () => {
   const {wish} = useSelector((state) => state);
   
   return (
-    <div className='bg-richblack-25'> 
+    <div className='bg-richblack-5 justify-center items-center'> 
       { 
          wish.length > 0 ?
-         (<div className='flex flex-col  items-center justify-between m-auto p-5'>
+         (<div className='flex flex-col items-center justify-between m-auto p-5'>
             <div className='m-auto w-[90%] border-[3px] border-gray-200'>
                {
                 wish.map( (item, index) => {
@@ -20,11 +20,11 @@ const WishList = () => {
                }
             </div>
          </div>):
-         (<div className='text-center items-center my-52'> 
+         (<div className='text-center items-center h-screen w-screen'> 
              <h1 className='font-semibold text-3xl font-chakra-petch m-7'>Wishlist Empty</h1>
              <Link to="/Shop">
                  <button 
-                 className='bg-blue-700 border-2 border-blue-700 rounded-lg text-md text-white py-2 px-2 font-chakra-petch font-extralight hover:bg-blue-800'>
+                 className='bg-bluebg-200 border-2 border-bluebg-200 rounded-lg text-md text-white py-2 px-2 font-chakra-petch font-extralight hover:bg-blue-800'>
                   Shop Now
                  </button>
              </Link>

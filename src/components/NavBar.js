@@ -40,17 +40,16 @@ const NavBar = () => {
 
         {/* Search */}
         <div className={`lg:flex lg:flex-row lg:w-auto lg:items-center p-2 m-auto ${isMenuOpen ? 'block' : 'hidden'}`}>
-          <div className='flex flex-row mr-8 border border-white rounded-md'>
+          {/* <div className='flex flex-row mr-8 border border-white rounded-md'>
               <input
                 type="text"
                 placeholder="Find Product here..."
                 className="w-40 p-1 h-10 font-chakra-petch rounded-l-md"
               />
               <button className='p-1 w-12 h-10 rounded-r-md'>
-                {/* <img src='/assets/icons/SearchIcon.png' className='h-6 w-6' alt="searchicon" /> */}
                 🔍
               </button>
-          </div>
+          </div> */}
 
           {/* Navigation Links */}
           <div className='m-auto'>

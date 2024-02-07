@@ -35,7 +35,7 @@ const WishListItem = ({ item, itemIndex}) => {
       <div className="flex lg:flex-row sm:flex-col gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
         <div className="m-auto lg:w-[40%]">
             {item.thumbnail ? (
-            <img src={item.thumbnail} className="w-full h-full rounded-md" />
+            <img src={item.thumbnail} className="w-full h-full rounded-md" alt=""/>
             ) : item.image ? (
             <img src={item.image} className="w-full h-full rounded-md" alt="cartimage" />
             ) : null}
@@ -76,14 +76,14 @@ const WishListItem = ({ item, itemIndex}) => {
             <p className="text-blue-700 font-semibold">${item.price}</p>
             <div
               onClick={removeFromWishlist}
-              className="cursor-pointer rounded-full bg-red-600 text-white p-2 text-3xl"
+              className="cursor-pointer rounded-full bg-[red] text-white p-2 text-3xl"
             >
               <RiDeleteBin2Line />
             </div> 
           </div>
             <div>
                 <Link to="/Checkout">
-                <button className='bg-blue-700 border-2 border-blue-700 rounded-lg font-chakra-petch font-semibold text-sm text-white w-[60%] px-4 py-2 mt-5 hover:bg-blue-800'>
+                <button className='bg-blue-700 border-2 border-blue-700 rounded-lg font-chakra-petch font-semibold text-sm text-white w-full px-4 py-2 mt-5 hover:bg-blue-800'>
                   Proceed To Checkout</button>
                 </Link>
 
