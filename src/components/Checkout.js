@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const Checkout = () => {
   return (
-    <div>
+    <div className='bg-richblack-25'>
       <div className='text-center items-center my-52'> 
           <h1 className='font-semibold text-xl font-chakra-petch m-7'>Ruko Jara Checkout Page Abhi Progress Par Hai....😂😂</h1>
           <Link to="/Shop">

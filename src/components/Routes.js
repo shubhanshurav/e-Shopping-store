@@ -57,7 +57,7 @@ const [shopdata , setShopData] = useState(shopData);
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/Shop" element={<Shop shopdata={shopdata} />} />
-        <Route path="/Shop/ViewDetail/:id" element={<ViewDetails />}/>
+        <Route path="/Shop/viewDetail/:id" element={<ViewDetails />}/>
         <Route path="/Shop/productDetails/:id" element={<ProductDetails />}/>
         <Route path="/About" element={<About datacustomer={datacustomer}/>}/>
         <Route path="/Contact" element={<Contact />} />

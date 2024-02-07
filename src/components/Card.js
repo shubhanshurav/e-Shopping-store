@@ -1,48 +1,3 @@
-// import React from "react";
-// import { Link, useNavigate } from "react-router-dom";
-// // import ViewDetails from "./ViewDetails";
-
-// const Card = ({ image, id, company, price, Heading,selectHandler , shopdata}) => {
-
-// // console.log(shopdata);
-// const navigate = useNavigate;
-
-//   return (
-//     <div className="w-[250px] border-inherit border rounded-xl py-3 px-3 m-5 " onClick={()=>navigate("/Shop/ViewDetail/" + id)}>
-//       <img src={image} className="w-full rounded-xl" alt="" />
-
-//       <p className="text-amber-800	">{company}</p>
-
-//       <p className="text-black text-[18px]  font-semibold mt-3">{Heading}</p>
-
-//       <p className="text-green-400 mt-3  ">
-//         {" "}
-//         {price} <s className="text-red-400 ">59.00$</s>
-//       </p>
-
-
-//       <div className="flex justify-between mt-6">
-
-
-//      {/* <Link to ="/Shop/ViewDetail"> <button className='text-red-600 font-semibold hover:text-black ' onClick = {() => selectHandler(id)}  >View Details</button></Link> */}
-
-//     <button className="bg-green-500 text-white py-2 px-2 rounded-md text-sm  font font-semibold ">
-//           {
-//             false ? <p>Remove Item</p> : <p>Add to Cart</p>
-//           }
-//         </button>
-       
-//       </div>
-   
-      
-//     </div>
-  
-//   );
-// };
-
-// export default Card;
-
-
 import React from "react";
 // import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from 'react-redux';
@@ -115,7 +70,7 @@ const Card = ({ card }) => {
             </button>
           )}
       </div>
-       <img src={card.image} className="w-full rounded-xl cursor-pointer" alt="data"  loading="lazy" onClick={()=>navigate("/Shop/ViewDetail/" + card.id)}/>
+       <img src={card.image} className="w-full rounded-xl cursor-pointer" alt="data"  loading="lazy" onClick={()=>navigate("/Shop/viewDetail/" + card.id)}/>
       
 
       <h1 className="text-gray-700 font-normal text-md text-left mt-1 uppercase">
@@ -128,7 +83,7 @@ const Card = ({ card }) => {
       <div className='text-sm'>
          <div className='flex justify-between'>
             <p className='font-md text-lg'>Stock: </p>
-            <p className='text-blue-700 font-bold'>{card.stock}</p>
+            <p className='text-richblack-100  font-bold'>{card.stock}</p>
          </div>
       </div>
       <div className='text-sm '>
@@ -138,9 +93,9 @@ const Card = ({ card }) => {
          </div>
       </div>
 
-      <p className="text-blue-700 font-bold mt-3 ">
+      <p className="text-richblack-100 font-bold mt-3 ">
         {" "}
-        ${card.price} <s className="text-red-400 px-2">59.00$</s>
+        ${card.price} <s className="text-[red] px-2">59.00$</s>
       </p>
 
       <div className="flex justify-between mt-6">

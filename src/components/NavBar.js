@@ -82,7 +82,7 @@ const NavBar = () => {
               </Link>
             )}
             {user && user?.accountType !== ACCOUNT_TYPE.INSTRUCTOR && (
-              <Link to="/Wishlist" className="text-white flex place-content-center w-7 relative">
+              <Link to="/dashboard/wishlist" className="text-white flex place-content-center w-7 relative">
                 <img src='/assets/wishlist.svg' alt='wishlist'/>
                 {wish.length > 0 &&
                   <span className='absolute -top-1 -right-3 font-bold text-gray-800 text-xs bg-yellow-500 flex w-5 h-5 items-center justify-center animate-bounce rounded-full'>{wish.length}</span>

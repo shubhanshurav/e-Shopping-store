@@ -9,7 +9,6 @@ const ViewDetails = () => {
   const { id } = useParams();
 
   // sambhal ke
-
   const clickedData = olddata.filter((some) => some.id === id);
   // console.log(clickedData)
 
