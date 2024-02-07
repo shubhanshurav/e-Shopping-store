@@ -20,8 +20,6 @@ import ProductDetails from './ProductDetails';
 
 import ForgotPassword from "../pages/ForgotPassword"
 import OpenRoute from "./Auth/OpenRoute"
-// import LoginForm from "../components/Auth/LoginForm"
-// import SignupForm from "../components/Auth/SignupForm"
 import Login from "../pages/Login"
 import Signup from "../pages/Signup"
 import Admin from "../pages/Admin"
