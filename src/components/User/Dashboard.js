@@ -24,7 +24,7 @@ function Dashboard() {
   }
 
   return (
-    <div className="relative flex min-h-[calc(100vh-3.5rem)]">
+    <div className="relative flex min-h-[calc(100vh-3.5rem)] bg-bluebg-200">
        {/* Toggle Button */}
        <button
         className=" top-80 left-0 p-[2px] z-50 text-white text-2xl bg-richblack-800 rounded"

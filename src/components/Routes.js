@@ -140,7 +140,6 @@ const [shopdata , setShopData] = useState(shopData);
               />
               <Route path="/Checkout" element={<Checkout />} />
               <Route path="/dashboard/wishlist" element={<WishList />} />
-              <Route path="/dashboard/updateDisplayPicture" element={<ChangeProfilePicture />} />
               {/* <Route path="/Shop/ViewDetail/:id" element={<ViewDetails />}/> */}
               {/* <Route path="/Shop/productDetails/:id" element={<ProductDetails />}/> */}
             </>
