@@ -31,7 +31,6 @@ import UpdatePassword from "../pages/UpdatePassword"
 import VerifyEmail from "../pages/VerifyEmail"
 import { getUserDetails } from "../services/operations/profileAPI"
 import { ACCOUNT_TYPE } from "../utils/constants"
-import ChangeProfilePicture from './User/Settings/ChangeProfilePicture';
 
 
 const RoutesConfig = () => {
@@ -137,7 +136,7 @@ const [shopdata , setShopData] = useState(shopData);
                 element={<Cart />}
               />
               <Route path="/Checkout" element={<Checkout />} />
-              <Route path="/dashboard/wishlist" element={<WishList />} />
+              <Route path="dashboard/wishlist" element={<WishList />} />
               {/* <Route path="/Shop/ViewDetail/:id" element={<ViewDetails />}/> */}
               {/* <Route path="/Shop/productDetails/:id" element={<ProductDetails />}/> */}
             </>

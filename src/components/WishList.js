@@ -8,7 +8,7 @@ const WishList = () => {
   const {wish} = useSelector((state) => state);
   
   return (
-    <div> 
+    <div className='bg-richblack-25'> 
       { 
          wish.length > 0 ?
          (<div className='flex flex-col  items-center justify-between m-auto p-5'>

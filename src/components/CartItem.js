@@ -21,7 +21,7 @@ const CartItem = ({ item, itemIndex}) => {
       <div className="flex lg:flex-row sm:flex-col gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
       <div className="m-auto lg:w-[40%]">
         {item.thumbnail ? (
-          <img src={item.thumbnail} className="w-full h-full rounded-md" />
+          <img src={item.thumbnail} className="w-full h-full rounded-md" alt=""/>
           // <ImageCarousel />
         ) : item.image ? (
           <img src={item.image} className="w-full h-full rounded-md" alt="cartimage" />
