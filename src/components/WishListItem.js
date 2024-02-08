@@ -32,7 +32,7 @@ const WishListItem = ({ item, itemIndex}) => {
 
   return (
     <div>
-      <div className="flex lg:flex-row sm:flex-col gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
+      <div className="flex flex-col md:flex-row gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
         <div className="m-auto lg:w-[40%]">
             {item.thumbnail ? (
             <img src={item.thumbnail} className="w-full h-full rounded-md" alt=""/>

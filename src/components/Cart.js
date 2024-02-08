@@ -28,7 +28,7 @@ const Cart = () => {
                 {/* Mapping for cartCard */}
                 {cartCard.map((cardItem, cardIndex) => (
                   <CartItem key={cardItem.id} item={cardItem} itemIndex={cardIndex + cart.length} />
-                ))}
+                ))} 
               </div>
 
               <div className='flex flex-col w-[90%] p-5 border-[3px] text-center border-gray-200'>

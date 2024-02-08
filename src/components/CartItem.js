@@ -18,7 +18,7 @@ const CartItem = ({ item, itemIndex}) => {
   
   return (
     <div>
-      <div className="flex lg:flex-row sm:flex-col gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
+      <div className="flex md:flex-row flex-col gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
       <div className="m-auto lg:w-[40%]">
         {item.thumbnail ? (
           <img src={item.thumbnail} className="w-full h-full rounded-md" alt=""/>
@@ -63,31 +63,13 @@ const CartItem = ({ item, itemIndex}) => {
             <p className="text-blue-700 font-semibold">${item.price}</p>
             <div
               onClick={removeFromCart}
-              className="cursor-pointer rounded-full bg-red-600 text-white p-2 text-3xl"
+              className="cursor-pointer rounded-full bg-[red] text-white p-2 text-3xl"
             >
               <RiDeleteBin2Line />
             </div> 
           </div>
         </div>
       </div>
-
-      {/* <div className="flex lg:flex-row sm:flex-col gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
-            <img src={item.image} className="w-full rounded-xl" alt="" />
-
-            <p className="text-amber-800">{item.company}</p>
-
-            <p className="text-black text-[18px]  font-semibold mt-3">{item.description}</p>
-
-          <div className="flex flex-row w-full gap-12 items-center pt-4">
-            <p className="text-blue-700 font-semibold">${item.price}</p>
-            <div
-              onClick={removeFromCart}
-              className="cursor-pointer rounded-full bg-red-600 text-white p-2 text-3xl"
-            >
-              <RiDeleteBin2Line />
-            </div>
-          </div>
-        </div> */}
     </div>
   );
 };
