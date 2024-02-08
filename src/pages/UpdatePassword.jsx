@@ -39,7 +39,7 @@ function UpdatePassword() {
       {loading ? (
         <div className="spinner"></div>
       ) : (
-        <div className="max-w-[500px] px-4 lg:px-8 py-10 bg-bluebg-200">
+        <div className="max-w-[500px] px-4 md:px-10 py-10 m-2 md:m-0 bg-bluebg-200">
           <h1 className="text-[1.875rem] font-semibold leading-[2.375rem] text-richblack-5">
             Choose new password
           </h1>
@@ -58,10 +58,10 @@ function UpdatePassword() {
                 value={password}
                 onChange={handleOnChange}
                 placeholder="Enter Password"
-                className="form-style w-full !pr-10 p-1 rounded-md"
+                className="form-style w-full !pr-10 p-2 rounded-md"
               />
               <span
-                onClick={() => setShowPassword((prev) => !prev)}
+                onClick={() => setShowPassword((prev) => !prev)} 
                 className="absolute right-3 top-[38px] z-[10] cursor-pointer"
               >
                 {showPassword ? (
@@ -71,6 +71,7 @@ function UpdatePassword() {
                 )}
               </span>
             </label>
+            
             <label className="relative mt-3 block">
               <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-richblack-5">
                 Confirm New Password <sup className="text-pink-200">*</sup>
@@ -82,7 +83,7 @@ function UpdatePassword() {
                 value={confirmPassword}
                 onChange={handleOnChange}
                 placeholder="Confirm Password"
-                className="form-style w-full !pr-10 p-1 rounded-md"
+                className="form-style w-full !pr-10 p-2 rounded-md"
               />
               <span
                 onClick={() => setShowConfirmPassword((prev) => !prev)}
