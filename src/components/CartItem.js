@@ -18,8 +18,8 @@ const CartItem = ({ item, itemIndex}) => {
   
   return (
     <div>
-      <div className="flex md:flex-row flex-col gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
-      <div className="m-auto lg:w-[40%]">
+      <div className="flex md:flex-row flex-col gap-3 p-4 m-auto pl-5 border-gray-200">
+      <div className="m-auto w-full">
         {item.thumbnail ? (
           <img src={item.thumbnail} className="w-full h-full rounded-md" alt=""/>
           // <ImageCarousel />
@@ -28,7 +28,7 @@ const CartItem = ({ item, itemIndex}) => {
         ) : null}
       </div>
 
-        <div className=" m-auto px-10 lg:w-[35%] sm:w-[70%]">
+        <div className=" m-auto w-fit lg:w-[35%] sm:w-[70%]">
           <h1 className="text-gray-700 font-semibold text-lg text-left mt-1">
             {item.title}
           </h1>
@@ -42,7 +42,7 @@ const CartItem = ({ item, itemIndex}) => {
           <h1 className="text-gray-700 font-md text-lg text-left mt-1 uppercase">
             {item.company}
           </h1>
-          <h1 className="text-gray-700 font-light text-xl text-left mt-1 py-3">
+          <h1 className="text-gray-700 font-light text-xl text-left mt-1 py-1">
             {item.Heading}
           </h1>
           <h1>{item.category}</h1>

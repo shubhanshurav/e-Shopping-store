@@ -3,8 +3,6 @@ import { RiDeleteBin2Line } from "react-icons/ri";
 import StarRating from './StarRating'; 
 import { useDispatch, useSelector} from 'react-redux';
 import {removeWish} from '../redux/Slices/WishSlice';
-// import { addCart, removeCart} from '../redux/Slices/CartSliceForCard';
-// import { add, remove} from '../redux/Slices/CartSlice';
 import { toast } from "react-hot-toast";
 import {Link} from 'react-router-dom';
 
@@ -18,22 +16,10 @@ const WishListItem = ({ item, itemIndex}) => {
     toast.error("Item Removed");
   };
 
-  // const addToCart = () => {
-  //   dispatch(addCart(item));
-  //   // dispatch(add(item));
-  //   toast.success("card added to Cart");
-  // }
-
-  // const removeFromCart = () => {
-  //   dispatch(removeCart(item.id));
-  //   // dispatch(remove(item.id));
-  //   toast.error("card removed from Cart");
-  // }
-
   return (
     <div>
       <div className="flex flex-col md:flex-row gap-3 p-4 m-auto pl-5 border-b-[3px] border-gray-200">
-        <div className="m-auto lg:w-[40%]">
+        <div className="m-auto w-full">
             {item.thumbnail ? (
             <img src={item.thumbnail} className="w-full h-full rounded-md" alt=""/>
             ) : item.image ? (
