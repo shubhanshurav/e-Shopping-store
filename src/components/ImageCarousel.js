@@ -24,7 +24,7 @@ const ImageCarousel = ({ post }) => {
   return (
     <div>
       <div className="h-[120px] md:h-[180px]">
-        <img src={post.images[currentImageIndex]} className="h-full w-full" alt={post.title} onClick={()=>navigate("/Shop/productDetails/" + post.id)}/>
+        <img src={post.images[currentImageIndex]} className="h-40 w-full object-contain" alt={post.title} onClick={()=>navigate("/Shop/productDetails/" + post.id)}/>
         <div className="top-0 right-0 left-0 flex justify-between -mt-16 -mx-4 ">
           <button onClick={previousImage} className=" text-2xl border-[1px] border-black py-1 m-1 rounded bg-richblack-100">
           <GrPrevious className='text-white'/>
@@ -41,7 +41,7 @@ const ImageCarousel = ({ post }) => {
             src={image}
             // alt={`${post.title} - Image ${index + 1}`}
             alt={`${post.title} -  ${index + 1}`}
-            className={`w-1/4 mx-1 my-2 cursor-pointer ${
+            className={`w-[25%] mx-1 my-2 cursor-pointer ${
               index === currentImageIndex ? 'border border-blue-500' : ''
             }`}
             onClick={() => handleImageClick(index)}
