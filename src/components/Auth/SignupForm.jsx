@@ -13,7 +13,7 @@ function SignupForm() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  // student or instructor
+  // customer or seller
   const [accountType, setAccountType] = useState(ACCOUNT_TYPE.STUDENT)
 
   const [formData, setFormData] = useState({
@@ -71,12 +71,12 @@ function SignupForm() {
   const tabData = [
     {
       id: 1,
-      tabName: "Student",
+      tabName: "Customer",
       type: ACCOUNT_TYPE.STUDENT,
     },
     {
       id: 2,
-      tabName: "Instructor",
+      tabName: "Seller",
       type: ACCOUNT_TYPE.INSTRUCTOR,
     },
   ]
